@@ -80,7 +80,9 @@ export class Renderer {
 
     animateFuse(matches: { cells: { x: number, y: number }[], kanji: string }[]) {
         matches.forEach(match => {
-            // Calculate bounding box
+            const isHorizontal = match.cells.every(c => c.y === match.cells[0].y);
+            const isVertical = match.cells.every(c => c.x === match.cells[0].x);
+
             let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
             match.cells.forEach(pos => {
                 minX = Math.min(minX, pos.x);
@@ -89,33 +91,44 @@ export class Renderer {
                 maxY = Math.max(maxY, pos.y);
             });
 
-            // Center position (pixels) relative to the container
-            const left = minX * 50;
-            const top = minY * 50;
-            const width = (maxX - minX + 1) * 50;
-            const height = (maxY - minY + 1) * 50;
+            const cellCount = match.cells.length;
+            const anchorLeft = minX * 50;
+            const anchorTop = minY * 50;
 
-            // Get the container's position on the page
+            let boxWidth: number;
+            let boxHeight: number;
+            if (isHorizontal) {
+                boxWidth = cellCount * 50;
+                boxHeight = 50;
+            } else if (isVertical) {
+                boxWidth = 50;
+                boxHeight = cellCount * 50;
+            } else {
+                boxWidth = (maxX - minX + 1) * 50;
+                boxHeight = (maxY - minY + 1) * 50;
+            }
+
             const containerRect = this.container.getBoundingClientRect();
-
-            // Create Kanji Overlay outside the container (append to body)
             const overlay = document.createElement('div');
             overlay.classList.add('kanji-overlay');
-            overlay.textContent = match.kanji;
-
-            // Position fixed relative to viewport (avoids scroll issues)
+            overlay.dataset.length = String(cellCount);
+            overlay.classList.add(isHorizontal ? 'horizontal' : 'vertical');
             overlay.style.position = 'fixed';
-            overlay.style.left = `${containerRect.left + left}px`;
-            overlay.style.top = `${containerRect.top + top}px`;
-            overlay.style.width = `${width}px`;
-            overlay.style.height = `${height}px`;
+            overlay.style.left = `${containerRect.left + anchorLeft}px`;
+            overlay.style.top = `${containerRect.top + anchorTop}px`;
+            overlay.style.width = `${boxWidth}px`;
+            overlay.style.height = `${boxHeight}px`;
+
+            // Build per-character spans preserving order
+            const chars = Array.from(match.kanji);
+            chars.forEach(ch => {
+                const span = document.createElement('span');
+                span.textContent = ch;
+                span.className = 'kanji-char';
+                overlay.appendChild(span);
+            });
 
             document.body.appendChild(overlay);
-
-            // Sequence:
-            // 0s: Kanji starts appearing (fade in/scale up).
-            // 1s: Kanji fully visible.
-            // 1s - 3s: Kanji disintegrates.
 
             setTimeout(() => {
                 overlay.classList.add('disintegrate');

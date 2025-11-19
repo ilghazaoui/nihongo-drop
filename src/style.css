@@ -274,3 +274,37 @@ body {
 .mode-button:active {
   transform: translateY(1px) scale(0.98);
 }
+
+.kanji-overlay.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.kanji-overlay.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.kanji-char {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 12px rgba(255,215,0,0.8), 0 0 24px rgba(255,215,0,0.4);
+}
+
+/* Adaptive font size for longer sequences */
+.kanji-overlay.horizontal[data-length='3'] .kanji-char,
+.kanji-overlay.vertical[data-length='3'] .kanji-char { font-size: 3.5rem; }
+.kanji-overlay.horizontal[data-length='4'] .kanji-char,
+.kanji-overlay.vertical[data-length='4'] .kanji-char { font-size: 3.2rem; }
+.kanji-overlay.horizontal[data-length='5'] .kanji-char,
+.kanji-overlay.vertical[data-length='5'] .kanji-char { font-size: 2.8rem; }
