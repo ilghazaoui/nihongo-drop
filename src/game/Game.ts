@@ -7,6 +7,7 @@ import type { WordMatchMode } from './WordManager';
 import { wordsByLevel, type JLPTLevel } from '../data/words';
 import { tokenize } from '../utils/HiraganaTokenizer';
 import { isPureKanji } from '../utils/kanji';
+import { SoundManager } from './SoundManager';
 
 export type GameMode = 'hiragana' | 'kanji';
 
@@ -16,6 +17,7 @@ export class Game {
     renderer: Renderer;
     input: Input;
     wordManager: WordManager;
+    soundManager: SoundManager;
     lastTime: number = 0;
     dropCounter: number = 0;
     dropInterval: number = 1000; // 1 second drop speed initially
@@ -35,13 +37,17 @@ export class Game {
         this.input = new Input('game-container', 6);
         this.wordManager = new WordManager(this.level);
         this.wordManager.setMode(this.mode as WordMatchMode);
+        this.soundManager = new SoundManager();
 
         this.input.onMove = (col) => {
             if (this.activeBlock && !this.gameOver) {
                 // Move active block to col
                 // Check if valid
                 if (this.grid.isValid(col, this.activeBlock.y) && this.grid.isEmpty(col, this.activeBlock.y)) {
-                    this.activeBlock.x = col;
+                    if (this.activeBlock.x !== col) {
+                        this.activeBlock.x = col;
+                        this.soundManager.playMove();
+                    }
                 }
             }
         };
@@ -58,6 +64,7 @@ export class Game {
                 const targetX = this.activeBlock.x - 1;
                 if (this.grid.isValid(targetX, this.activeBlock.y) && this.grid.isEmpty(targetX, this.activeBlock.y)) {
                     this.activeBlock.x = targetX;
+                    this.soundManager.playMove();
                 }
             }
         };
@@ -67,6 +74,7 @@ export class Game {
                 const targetX = this.activeBlock.x + 1;
                 if (this.grid.isValid(targetX, this.activeBlock.y) && this.grid.isEmpty(targetX, this.activeBlock.y)) {
                     this.activeBlock.x = targetX;
+                    this.soundManager.playMove();
                 }
             }
         };
@@ -78,6 +86,7 @@ export class Game {
         };
 
         this.input.onStartOrRestart = () => {
+            this.soundManager.resume();
             const anySelf = this as any;
             if (this.gameOver) {
                 if (typeof anySelf.restartGameFromUI === 'function') {
@@ -167,6 +176,7 @@ export class Game {
             this.gameOver = true;
             console.log("Game Over");
             this.isRunning = false;
+            this.soundManager.playGameOver();
             if (this.onGameOver) {
                 this.onGameOver();
             }
@@ -225,11 +235,13 @@ export class Game {
         this.lastColumn = this.activeBlock.x; // Update last column
         this.grid.setCell(this.activeBlock.x, this.activeBlock.y, this.activeBlock.char);
         this.activeBlock = null; // Reset active block immediately
+        this.soundManager.playDrop();
 
         // Check for words
         const matches = this.wordManager.checkMatches(this.grid);
         if (matches.length > 0) {
             console.log("Matches found:", matches);
+            this.soundManager.playMatch();
 
             // Score calculation: 100 per block * level multiplier
             matches.forEach(match => {
