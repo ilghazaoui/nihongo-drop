@@ -20,15 +20,6 @@ describe('WordManager kanji mode matching', () => {
     expect(matches.some(m => m.kanji === '学校')).toBe(true);
   });
 
-  it('matches mixed kanji+kana (行く)', () => {
-    const wm = new WordManager();
-    wm.setMode('kanji');
-    const grid = new Grid(6, 10);
-    fillHorizontal(grid, 0, ['行', 'く']);
-    const matches = wm.checkMatches(grid);
-    expect(matches.some(m => m.kanji === '行く')).toBe(true);
-  });
-
   it('does NOT match single-kanji word (今)', () => {
     const wm = new WordManager();
     wm.setMode('kanji');
@@ -47,4 +38,3 @@ describe('WordManager kanji mode matching', () => {
     expect(matches.some(m => m.kanji === '子供')).toBe(true);
   });
 });
-
