@@ -6,9 +6,14 @@ export type WordMatchMode = 'hiragana' | 'kanji';
 
 const LEVEL_ORDER: JLPTLevel[] = ['n5', 'n4', 'n3', 'n2', 'n1'];
 
+interface WordData {
+    kanji: string;
+    level: JLPTLevel;
+}
+
 export class WordManager {
-    wordsHiragana: Map<string, string>; // hiragana -> kanji
-    wordsKanji: Map<string, string>;    // kanji -> kanji (only multi-char kanji strings)
+    wordsHiragana: Map<string, WordData>; // hiragana -> { kanji, level }
+    wordsKanji: Map<string, WordData>;    // kanji -> { kanji, level }
     mode: WordMatchMode = 'hiragana';
     level: JLPTLevel;
 
@@ -34,11 +39,11 @@ export class WordManager {
             const source = wordsByLevel[currentLevel];
 
             source.forEach((entry) => {
-                this.wordsHiragana.set(entry.hiragana, entry.kanji);
+                this.wordsHiragana.set(entry.hiragana, { kanji: entry.kanji, level: currentLevel });
 
                 const chars = Array.from(entry.kanji);
                 if (chars.length >= 2 && isPureKanji(entry.kanji)) {
-                    this.wordsKanji.set(entry.kanji, entry.kanji);
+                    this.wordsKanji.set(entry.kanji, { kanji: entry.kanji, level: currentLevel });
                 }
             });
         }
@@ -48,12 +53,12 @@ export class WordManager {
         this.mode = mode;
     }
 
-    private get currentMap(): Map<string, string> {
+    private get currentMap(): Map<string, WordData> {
         return this.mode === 'kanji' ? this.wordsKanji : this.wordsHiragana;
     }
 
-    checkMatches(grid: Grid): { cells: { x: number, y: number }[], kanji: string }[] {
-        const matches: { cells: { x: number, y: number }[], kanji: string }[] = [];
+    checkMatches(grid: Grid): { cells: { x: number, y: number }[], kanji: string, level: JLPTLevel }[] {
+        const matches: { cells: { x: number, y: number }[], kanji: string, level: JLPTLevel }[] = [];
         const visited = new Set<string>();
         const dict = this.currentMap;
 
@@ -66,7 +71,7 @@ export class WordManager {
                     if (!char) break;
                     currentWord += char;
                     if (dict.has(currentWord)) {
-                        const kanji = dict.get(currentWord)!;
+                        const data = dict.get(currentWord)!;
                         const cells = [];
                         let isNew = false;
                         for (let m = x; m <= k; m++) {
@@ -76,7 +81,7 @@ export class WordManager {
                         }
                         if (isNew) {
                             cells.forEach(c => visited.add(`${c.x},${c.y}`));
-                            matches.push({ cells, kanji });
+                            matches.push({ cells, kanji: data.kanji, level: data.level });
                         }
                     }
                 }
@@ -92,7 +97,7 @@ export class WordManager {
                     if (!char) break;
                     currentWord += char;
                     if (dict.has(currentWord)) {
-                        const kanji = dict.get(currentWord)!;
+                        const data = dict.get(currentWord)!;
                         const cells = [];
                         let isNew = false;
                         for (let m = y; m <= k; m++) {
@@ -102,7 +107,7 @@ export class WordManager {
                         }
                         if (isNew) {
                             cells.forEach(c => visited.add(`${c.x},${c.y}`));
-                            matches.push({ cells, kanji });
+                            matches.push({ cells, kanji: data.kanji, level: data.level });
                         }
                     }
                 }

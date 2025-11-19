@@ -208,8 +208,8 @@ export class Game {
         this.lockBlock();
     }
 
-    private getLevelMultiplier(): number {
-        switch (this.level) {
+    private getLevelMultiplier(level: JLPTLevel): number {
+        switch (level) {
             case 'n5': return 1;
             case 'n4': return 2;
             case 'n3': return 3;
@@ -232,12 +232,11 @@ export class Game {
             console.log("Matches found:", matches);
 
             // Score calculation: 100 per block * level multiplier
-            const levelMult = this.getLevelMultiplier();
-            let blocksCleared = 0;
             matches.forEach(match => {
-                blocksCleared += match.cells.length;
+                const levelMult = this.getLevelMultiplier(match.level);
+                const blocksCleared = match.cells.length;
+                this.score += blocksCleared * 100 * levelMult;
             });
-            this.score += blocksCleared * 100 * levelMult;
 
             // Trigger Fuse Animation (Independent)
             this.renderer.animateFuse(matches);

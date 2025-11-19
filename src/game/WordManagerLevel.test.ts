@@ -7,18 +7,21 @@ describe('WordManager Levels', () => {
         const manager = new WordManager('n5');
         // "ame" (rain) is N5
         expect(manager.wordsHiragana.has('あめ')).toBe(true);
+        expect(manager.wordsHiragana.get('あめ')?.level).toBe('n5');
     });
 
     it('should include N5 words when level is N4', () => {
         const manager = new WordManager('n4');
         // "ame" (rain) is N5
         expect(manager.wordsHiragana.has('あめ')).toBe(true);
+        expect(manager.wordsHiragana.get('あめ')?.level).toBe('n5');
     });
 
     it('should include N5 words when level is N1', () => {
         const manager = new WordManager('n1');
         // "ame" (rain) is N5
         expect(manager.wordsHiragana.has('あめ')).toBe(true);
+        expect(manager.wordsHiragana.get('あめ')?.level).toBe('n5');
     });
 
     it('should NOT include N1 words when level is N5', () => {
