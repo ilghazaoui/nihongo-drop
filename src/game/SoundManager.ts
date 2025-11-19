@@ -59,11 +59,40 @@ export class SoundManager {
         this.playTone(659.25, 'sine', 0.2, now + 0.2, 0.1); // E5
     }
 
-    playGameOver() {
-        // Descending dissonant
+    playStart() {
+        // Positive ascending major chord
         const now = 0;
-        this.playTone(300, 'sawtooth', 0.3, now, 0.2);
-        this.playTone(280, 'sawtooth', 0.3, now + 0.2, 0.2);
-        this.playTone(200, 'sawtooth', 0.8, now + 0.4, 0.2);
+        this.playTone(523.25, 'sine', 0.1, now, 0.1);       // C5
+        this.playTone(659.25, 'sine', 0.1, now + 0.1, 0.1); // E5
+        this.playTone(783.99, 'sine', 0.3, now + 0.2, 0.1); // G5
+    }
+
+    playHardDrop() {
+        // Short slide/whoosh
+        if (!this.audioContext || this.isMuted) return;
+        const now = this.audioContext.currentTime;
+        const osc = this.audioContext.createOscillator();
+        const gain = this.audioContext.createGain();
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(400, now);
+        osc.frequency.exponentialRampToValueAtTime(100, now + 0.1);
+
+        gain.gain.setValueAtTime(0.1, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+
+        osc.connect(gain);
+        gain.connect(this.audioContext.destination);
+
+        osc.start(now);
+        osc.stop(now + 0.1);
+    }
+
+    playGameOver() {
+        // Descending, softer (triangle wave instead of sawtooth)
+        const now = 0;
+        this.playTone(200, 'triangle', 0.4, now, 0.2);
+        this.playTone(180, 'triangle', 0.4, now + 0.3, 0.2);
+        this.playTone(150, 'triangle', 0.8, now + 0.6, 0.2);
     }
 }

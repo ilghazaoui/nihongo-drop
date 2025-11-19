@@ -132,6 +132,7 @@ export class Game {
         this.gameOver = false;
         this.spawnBlock();
         this.lastTime = performance.now();
+        this.soundManager.playStart();
         requestAnimationFrame((time) => this.loop(time));
     }
 
@@ -212,6 +213,7 @@ export class Game {
 
     hardDrop() {
         if (!this.activeBlock) return;
+        this.soundManager.playHardDrop();
         while (this.grid.isEmpty(this.activeBlock.x, this.activeBlock.y + 1)) {
             this.activeBlock.y++;
         }
