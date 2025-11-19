@@ -19,25 +19,35 @@ const restartBtn = document.getElementById('restart-btn') as HTMLButtonElement;
 const overlay = document.getElementById('game-overlay') as HTMLDivElement;
 const game = new Game();
 
-startBtn.addEventListener('click', () => {
+function startGame() {
   console.log('Game Started');
   overlay.style.display = 'none';
+  startBtn.style.display = 'none';
+  restartBtn.style.display = 'none';
   game.start();
-});
+}
 
-restartBtn.addEventListener('click', () => {
+function restartGame() {
   console.log('Game Restarted');
   overlay.style.display = 'none';
   startBtn.style.display = 'none';
   restartBtn.style.display = 'block';
   game.reset();
   game.start();
+}
+
+startBtn.addEventListener('click', () => {
+  startGame();
 });
 
-// We need to expose a way for the Game to show the restart button.
-// For now, let's pass a callback or just expose the button ID to the Game class?
-// Or better, let the Game class dispatch an event.
-// Simpler: Pass the restart button ID to the Game constructor or a setGameOverCallback.
+restartBtn.addEventListener('click', () => {
+  restartGame();
+});
+
+// Permettre au Game d'utiliser la même logique quand Enter/Espace sont pressés
+// (via Game.input.onStartOrRestart)
+(game as any).startGameFromUI = startGame;
+(game as any).restartGameFromUI = restartGame;
 
 game.onGameOver = () => {
   startBtn.style.display = 'none';

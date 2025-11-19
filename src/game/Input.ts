@@ -3,6 +3,10 @@ export class Input {
     isDown: boolean = false;
     onMove: ((x: number) => void) | null = null;
     onDrop: (() => void) | null = null;
+    onLeft: (() => void) | null = null;
+    onRight: (() => void) | null = null;
+    onSoftDrop: (() => void) | null = null;
+    onStartOrRestart: (() => void) | null = null;
     container: HTMLElement;
     gridWidth: number;
 
@@ -28,6 +32,43 @@ export class Input {
         });
         this.container.addEventListener('touchend', () => {
             this.handleUp();
+        });
+
+        // Keyboard events
+        window.addEventListener('keydown', (e) => {
+            // Ignore if user is typing in an input/textarea/select
+            const target = e.target as HTMLElement | null;
+            if (target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) {
+                return;
+            }
+
+            switch (e.code) {
+                case 'Enter':
+                case 'Space':
+                    if (this.onStartOrRestart) {
+                        e.preventDefault();
+                        this.onStartOrRestart();
+                    }
+                    break;
+                case 'ArrowLeft':
+                    if (this.onLeft) {
+                        e.preventDefault();
+                        this.onLeft();
+                    }
+                    break;
+                case 'ArrowRight':
+                    if (this.onRight) {
+                        e.preventDefault();
+                        this.onRight();
+                    }
+                    break;
+                case 'ArrowDown':
+                    if (this.onSoftDrop) {
+                        e.preventDefault();
+                        this.onSoftDrop();
+                    }
+                    break;
+            }
         });
     }
 

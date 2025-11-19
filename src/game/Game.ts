@@ -41,6 +41,49 @@ export class Game {
                 this.hardDrop();
             }
         };
+
+        // Keyboard mappings
+        this.input.onLeft = () => {
+            if (this.activeBlock && !this.gameOver) {
+                const targetX = this.activeBlock.x - 1;
+                if (this.grid.isValid(targetX, this.activeBlock.y) && this.grid.isEmpty(targetX, this.activeBlock.y)) {
+                    this.activeBlock.x = targetX;
+                }
+            }
+        };
+
+        this.input.onRight = () => {
+            if (this.activeBlock && !this.gameOver) {
+                const targetX = this.activeBlock.x + 1;
+                if (this.grid.isValid(targetX, this.activeBlock.y) && this.grid.isEmpty(targetX, this.activeBlock.y)) {
+                    this.activeBlock.x = targetX;
+                }
+            }
+        };
+
+        this.input.onSoftDrop = () => {
+            if (this.activeBlock && !this.gameOver) {
+                this.drop();
+            }
+        };
+
+        this.input.onStartOrRestart = () => {
+            const anySelf = this as any;
+            if (this.gameOver) {
+                if (typeof anySelf.restartGameFromUI === 'function') {
+                    anySelf.restartGameFromUI();
+                } else {
+                    this.reset();
+                    this.start();
+                }
+            } else if (!this.isRunning) {
+                if (typeof anySelf.startGameFromUI === 'function') {
+                    anySelf.startGameFromUI();
+                } else {
+                    this.start();
+                }
+            }
+        };
     }
 
     reset() {
