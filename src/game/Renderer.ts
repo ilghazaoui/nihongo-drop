@@ -89,26 +89,28 @@ export class Renderer {
                 maxY = Math.max(maxY, pos.y);
             });
 
-            // Center position (pixels)
+            // Center position (pixels) relative to the container
             const left = minX * 50;
             const top = minY * 50;
             const width = (maxX - minX + 1) * 50;
             const height = (maxY - minY + 1) * 50;
-            // const centerX = left + width / 2;
-            // const centerY = top + height / 2;
 
-            // Create Kanji Overlay
+            // Get the container's position on the page
+            const containerRect = this.container.getBoundingClientRect();
+
+            // Create Kanji Overlay outside the container (append to body)
             const overlay = document.createElement('div');
             overlay.classList.add('kanji-overlay');
             overlay.textContent = match.kanji;
-            // Center the overlay in the bounding box
-            // Since overlay is flex centered, we just need to position it over the box
-            overlay.style.left = `${left}px`;
-            overlay.style.top = `${top}px`;
+
+            // Position fixed relative to viewport (avoids scroll issues)
+            overlay.style.position = 'fixed';
+            overlay.style.left = `${containerRect.left + left}px`;
+            overlay.style.top = `${containerRect.top + top}px`;
             overlay.style.width = `${width}px`;
             overlay.style.height = `${height}px`;
 
-            this.container.appendChild(overlay);
+            document.body.appendChild(overlay);
 
             // Sequence:
             // 0s: Kanji starts appearing (fade in/scale up).
