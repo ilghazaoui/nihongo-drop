@@ -1,0 +1,3550 @@
+[
+  {
+    "hiragana": "あおじろい",
+    "kanji": "青白い"
+  },
+  {
+    "hiragana": "あけがた",
+    "kanji": "明け方"
+  },
+  {
+    "hiragana": "あしあと",
+    "kanji": "足跡"
+  },
+  {
+    "hiragana": "あしもと",
+    "kanji": "足元"
+  },
+  {
+    "hiragana": "あじわう",
+    "kanji": "味わう"
+  },
+  {
+    "hiragana": "あつかましい",
+    "kanji": "厚かましい"
+  },
+  {
+    "hiragana": "あてはまる",
+    "kanji": "当てはまる"
+  },
+  {
+    "hiragana": "あてはめる",
+    "kanji": "当てはめる"
+  },
+  {
+    "hiragana": "あばれる",
+    "kanji": "暴れる"
+  },
+  {
+    "hiragana": "あまど",
+    "kanji": "雨戸"
+  },
+  {
+    "hiragana": "あまやかす",
+    "kanji": "甘やかす"
+  },
+  {
+    "hiragana": "あまる",
+    "kanji": "余る"
+  },
+  {
+    "hiragana": "あみもの",
+    "kanji": "編み物"
+  },
+  {
+    "hiragana": "あむ",
+    "kanji": "編む"
+  },
+  {
+    "hiragana": "あやうい",
+    "kanji": "危うい"
+  },
+  {
+    "hiragana": "あらい",
+    "kanji": "荒い"
+  },
+  {
+    "hiragana": "あらためて",
+    "kanji": "改めて"
+  },
+  {
+    "hiragana": "あらためる",
+    "kanji": "改める"
+  },
+  {
+    "hiragana": "ありがたい",
+    "kanji": "有難い"
+  },
+  {
+    "hiragana": "あれる",
+    "kanji": "荒れる"
+  },
+  {
+    "hiragana": "あんい",
+    "kanji": "安易"
+  },
+  {
+    "hiragana": "いいだす",
+    "kanji": "言い出す"
+  },
+  {
+    "hiragana": "いいつける",
+    "kanji": "言い付ける"
+  },
+  {
+    "hiragana": "いきいき",
+    "kanji": "生き生き"
+  },
+  {
+    "hiragana": "いくじ",
+    "kanji": "育児"
+  },
+  {
+    "hiragana": "いくぶん",
+    "kanji": "幾分"
+  },
+  {
+    "hiragana": "いけばな",
+    "kanji": "生け花"
+  },
+  {
+    "hiragana": "いご",
+    "kanji": "以後"
+  },
+  {
+    "hiragana": "いこう",
+    "kanji": "以降"
+  },
+  {
+    "hiragana": "いさましい",
+    "kanji": "勇ましい"
+  },
+  {
+    "hiragana": "いしょくじゅう",
+    "kanji": "衣食住"
+  },
+  {
+    "hiragana": "いちだんと",
+    "kanji": "一段と"
+  },
+  {
+    "hiragana": "いちりゅう",
+    "kanji": "一流"
+  },
+  {
+    "hiragana": "いっさくじつ",
+    "kanji": "一昨日"
+  },
+  {
+    "hiragana": "いっさくねん",
+    "kanji": "一昨年"
+  },
+  {
+    "hiragana": "いってい",
+    "kanji": "一定"
+  },
+  {
+    "hiragana": "いっていらっしゃい",
+    "kanji": "行っていらっしゃい"
+  },
+  {
+    "hiragana": "いってらっしゃい",
+    "kanji": "行ってらっしゃい"
+  },
+  {
+    "hiragana": "いてん",
+    "kanji": "移転"
+  },
+  {
+    "hiragana": "いれもの",
+    "kanji": "入れ物"
+  },
+  {
+    "hiragana": "いんりょく",
+    "kanji": "引力"
+  },
+  {
+    "hiragana": "うえき",
+    "kanji": "植木"
+  },
+  {
+    "hiragana": "うかぶ",
+    "kanji": "浮ぶ"
+  },
+  {
+    "hiragana": "うかべる",
+    "kanji": "浮かべる"
+  },
+  {
+    "hiragana": "うく",
+    "kanji": "浮く"
+  },
+  {
+    "hiragana": "うけたまわる",
+    "kanji": "承る"
+  },
+  {
+    "hiragana": "うけとり",
+    "kanji": "受取"
+  },
+  {
+    "hiragana": "うけもつ",
+    "kanji": "受け持つ"
+  },
+  {
+    "hiragana": "うすぐらい",
+    "kanji": "薄暗い"
+  },
+  {
+    "hiragana": "うすめる",
+    "kanji": "薄める"
+  },
+  {
+    "hiragana": "うちあわせ",
+    "kanji": "打合せ"
+  },
+  {
+    "hiragana": "うちけす",
+    "kanji": "打ち消す"
+  },
+  {
+    "hiragana": "うやまう",
+    "kanji": "敬う"
+  },
+  {
+    "hiragana": "うらがえす",
+    "kanji": "裏返す"
+  },
+  {
+    "hiragana": "うらぐち",
+    "kanji": "裏口"
+  },
+  {
+    "hiragana": "うらなう",
+    "kanji": "占う"
+  },
+  {
+    "hiragana": "うりあげ",
+    "kanji": "売上"
+  },
+  {
+    "hiragana": "うりきれ",
+    "kanji": "売り切れ"
+  },
+  {
+    "hiragana": "うりきれる",
+    "kanji": "売り切れる"
+  },
+  {
+    "hiragana": "うれゆき",
+    "kanji": "売行き"
+  },
+  {
+    "hiragana": "うんが",
+    "kanji": "運河"
+  },
+  {
+    "hiragana": "えいぶん",
+    "kanji": "英文"
+  },
+  {
+    "hiragana": "えいわ",
+    "kanji": "英和"
+  },
+  {
+    "hiragana": "えきたい",
+    "kanji": "液体"
+  },
+  {
+    "hiragana": "えのぐ",
+    "kanji": "絵の具"
+  },
+  {
+    "hiragana": "えらい",
+    "kanji": "偉い"
+  },
+  {
+    "hiragana": "えんげい",
+    "kanji": "園芸"
+  },
+  {
+    "hiragana": "えんげき",
+    "kanji": "演劇"
+  },
+  {
+    "hiragana": "えんしゅう",
+    "kanji": "円周"
+  },
+  {
+    "hiragana": "えんそく",
+    "kanji": "遠足"
+  },
+  {
+    "hiragana": "えんちょう",
+    "kanji": "延長"
+  },
+  {
+    "hiragana": "えんとつ",
+    "kanji": "煙突"
+  },
+  {
+    "hiragana": "おいかける",
+    "kanji": "追いかける"
+  },
+  {
+    "hiragana": "おいこす",
+    "kanji": "追い越す"
+  },
+  {
+    "hiragana": "おうじょ",
+    "kanji": "王女"
+  },
+  {
+    "hiragana": "おうべい",
+    "kanji": "欧米"
+  },
+  {
+    "hiragana": "おおどおり",
+    "kanji": "大通り"
+  },
+  {
+    "hiragana": "おかえり",
+    "kanji": "お帰り"
+  },
+  {
+    "hiragana": "おがむ",
+    "kanji": "拝む"
+  },
+  {
+    "hiragana": "おかわり",
+    "kanji": "お代わり"
+  },
+  {
+    "hiragana": "おぎなう",
+    "kanji": "補う"
+  },
+  {
+    "hiragana": "おきのどくに",
+    "kanji": "お気の毒に"
+  },
+  {
+    "hiragana": "おくがい",
+    "kanji": "屋外"
+  },
+  {
+    "hiragana": "おげんきで",
+    "kanji": "お元気で"
+  },
+  {
+    "hiragana": "おさきに",
+    "kanji": "お先に"
+  },
+  {
+    "hiragana": "おじさん",
+    "kanji": "小父さん"
+  },
+  {
+    "hiragana": "おせわになりました",
+    "kanji": "お世話になりました"
+  },
+  {
+    "hiragana": "おだいじに",
+    "kanji": "お大事に"
+  },
+  {
+    "hiragana": "おちつく",
+    "kanji": "落着く"
+  },
+  {
+    "hiragana": "おでかけ",
+    "kanji": "お出掛け"
+  },
+  {
+    "hiragana": "おてつだいさん",
+    "kanji": "お手伝いさん"
+  },
+  {
+    "hiragana": "おとしもの",
+    "kanji": "落し物"
+  },
+  {
+    "hiragana": "おねがいします",
+    "kanji": "お願いします"
+  },
+  {
+    "hiragana": "おばさん",
+    "kanji": "小母さん"
+  },
+  {
+    "hiragana": "おまいり",
+    "kanji": "お参り"
+  },
+  {
+    "hiragana": "おまたせしました",
+    "kanji": "お待たせしました"
+  },
+  {
+    "hiragana": "おまちください",
+    "kanji": "お待ちください"
+  },
+  {
+    "hiragana": "おもいがけない",
+    "kanji": "思い掛けない"
+  },
+  {
+    "hiragana": "おもいきり",
+    "kanji": "思い切り"
+  },
+  {
+    "hiragana": "おもいこむ",
+    "kanji": "思い込む"
+  },
+  {
+    "hiragana": "おもいっきり",
+    "kanji": "思いっ切り"
+  },
+  {
+    "hiragana": "おもたい",
+    "kanji": "重たい"
+  },
+  {
+    "hiragana": "おやすみ",
+    "kanji": "お休み"
+  },
+  {
+    "hiragana": "おやゆび",
+    "kanji": "親指"
+  },
+  {
+    "hiragana": "おんしつ",
+    "kanji": "温室"
+  },
+  {
+    "hiragana": "おんせん",
+    "kanji": "温泉"
+  },
+  {
+    "hiragana": "おんたい",
+    "kanji": "温帯"
+  },
+  {
+    "hiragana": "おんちゅう",
+    "kanji": "御中"
+  },
+  {
+    "hiragana": "おんなのひと",
+    "kanji": "女の人"
+  },
+  {
+    "hiragana": "かいかい",
+    "kanji": "開会"
+  },
+  {
+    "hiragana": "かいかん",
+    "kanji": "会館"
+  },
+  {
+    "hiragana": "かいさつ",
+    "kanji": "改札"
+  },
+  {
+    "hiragana": "かいさん",
+    "kanji": "解散"
+  },
+  {
+    "hiragana": "かいすいよく",
+    "kanji": "海水浴"
+  },
+  {
+    "hiragana": "かいすう",
+    "kanji": "回数"
+  },
+  {
+    "hiragana": "かいすうけん",
+    "kanji": "回数券"
+  },
+  {
+    "hiragana": "かいせい",
+    "kanji": "快晴"
+  },
+  {
+    "hiragana": "かいせい",
+    "kanji": "改正"
+  },
+  {
+    "hiragana": "かいせつ",
+    "kanji": "解説"
+  },
+  {
+    "hiragana": "かいぞう",
+    "kanji": "改造"
+  },
+  {
+    "hiragana": "かいつう",
+    "kanji": "開通"
+  },
+  {
+    "hiragana": "かいてん",
+    "kanji": "回転"
+  },
+  {
+    "hiragana": "かいとう",
+    "kanji": "解答"
+  },
+  {
+    "hiragana": "かいとう",
+    "kanji": "回答"
+  },
+  {
+    "hiragana": "がいぶ",
+    "kanji": "外部"
+  },
+  {
+    "hiragana": "かいほう",
+    "kanji": "解放"
+  },
+  {
+    "hiragana": "かいほう",
+    "kanji": "開放"
+  },
+  {
+    "hiragana": "かいよう",
+    "kanji": "海洋"
+  },
+  {
+    "hiragana": "かおく",
+    "kanji": "家屋"
+  },
+  {
+    "hiragana": "かかわる",
+    "kanji": "係わる"
+  },
+  {
+    "hiragana": "かきとめ",
+    "kanji": "書留"
+  },
+  {
+    "hiragana": "かきとり",
+    "kanji": "書取"
+  },
+  {
+    "hiragana": "かぎり",
+    "kanji": "限り"
+  },
+  {
+    "hiragana": "かくじ",
+    "kanji": "各自"
+  },
+  {
+    "hiragana": "がくじゅつ",
+    "kanji": "学術"
+  },
+  {
+    "hiragana": "かくち",
+    "kanji": "各地"
+  },
+  {
+    "hiragana": "かくど",
+    "kanji": "角度"
+  },
+  {
+    "hiragana": "がくねん",
+    "kanji": "学年"
+  },
+  {
+    "hiragana": "かくべつ",
+    "kanji": "格別"
+  },
+  {
+    "hiragana": "がくりょく",
+    "kanji": "学力"
+  },
+  {
+    "hiragana": "かけざん",
+    "kanji": "掛け算"
+  },
+  {
+    "hiragana": "かけつ",
+    "kanji": "可決"
+  },
+  {
+    "hiragana": "かこう",
+    "kanji": "下降"
+  },
+  {
+    "hiragana": "かこう",
+    "kanji": "火口"
+  },
+  {
+    "hiragana": "かざん",
+    "kanji": "火山"
+  },
+  {
+    "hiragana": "かしだし",
+    "kanji": "貸し出し"
+  },
+  {
+    "hiragana": "かしつ",
+    "kanji": "過失"
+  },
+  {
+    "hiragana": "かじつ",
+    "kanji": "果実"
+  },
+  {
+    "hiragana": "かしま",
+    "kanji": "貸間"
+  },
+  {
+    "hiragana": "かしや",
+    "kanji": "貸家"
+  },
+  {
+    "hiragana": "かぜい",
+    "kanji": "課税"
+  },
+  {
+    "hiragana": "かせん",
+    "kanji": "下線"
+  },
+  {
+    "hiragana": "かそく",
+    "kanji": "加速"
+  },
+  {
+    "hiragana": "かそくど",
+    "kanji": "加速度"
+  },
+  {
+    "hiragana": "かたまる",
+    "kanji": "固まる"
+  },
+  {
+    "hiragana": "かたみち",
+    "kanji": "片道"
+  },
+  {
+    "hiragana": "かたむく",
+    "kanji": "傾く"
+  },
+  {
+    "hiragana": "かたよる",
+    "kanji": "片寄る"
+  },
+  {
+    "hiragana": "がっか",
+    "kanji": "学科"
+  },
+  {
+    "hiragana": "がっかい",
+    "kanji": "学会"
+  },
+  {
+    "hiragana": "かつぐ",
+    "kanji": "担ぐ"
+  },
+  {
+    "hiragana": "かつじ",
+    "kanji": "活字"
+  },
+  {
+    "hiragana": "かってに",
+    "kanji": "勝手に"
+  },
+  {
+    "hiragana": "かつりょく",
+    "kanji": "活力"
+  },
+  {
+    "hiragana": "かねつ",
+    "kanji": "加熱"
+  },
+  {
+    "hiragana": "かはんすう",
+    "kanji": "過半数"
+  },
+  {
+    "hiragana": "かぶせる",
+    "kanji": "被せる"
+  },
+  {
+    "hiragana": "かまいません",
+    "kanji": "構いません"
+  },
+  {
+    "hiragana": "かみさま",
+    "kanji": "神様"
+  },
+  {
+    "hiragana": "かもつ",
+    "kanji": "貨物"
+  },
+  {
+    "hiragana": "からっぽ",
+    "kanji": "空っぽ"
+  },
+  {
+    "hiragana": "かれる",
+    "kanji": "枯れる"
+  },
+  {
+    "hiragana": "かわいがる",
+    "kanji": "可愛がる"
+  },
+  {
+    "hiragana": "かんき",
+    "kanji": "換気"
+  },
+  {
+    "hiragana": "かんさい",
+    "kanji": "関西"
+  },
+  {
+    "hiragana": "がんじつ",
+    "kanji": "元日"
+  },
+  {
+    "hiragana": "かんずる",
+    "kanji": "感ずる"
+  },
+  {
+    "hiragana": "かんせつ",
+    "kanji": "間接"
+  },
+  {
+    "hiragana": "かんそく",
+    "kanji": "観測"
+  },
+  {
+    "hiragana": "かんたい",
+    "kanji": "寒帯"
+  },
+  {
+    "hiragana": "かんちょう",
+    "kanji": "官庁"
+  },
+  {
+    "hiragana": "かんづめ",
+    "kanji": "缶詰"
+  },
+  {
+    "hiragana": "かんでんち",
+    "kanji": "乾電池"
+  },
+  {
+    "hiragana": "かんとう",
+    "kanji": "関東"
+  },
+  {
+    "hiragana": "かんねん",
+    "kanji": "観念"
+  },
+  {
+    "hiragana": "かんぱい",
+    "kanji": "乾杯"
+  },
+  {
+    "hiragana": "かんわ",
+    "kanji": "漢和"
+  },
+  {
+    "hiragana": "きあつ",
+    "kanji": "気圧"
+  },
+  {
+    "hiragana": "きがえ",
+    "kanji": "着替え"
+  },
+  {
+    "hiragana": "きがえる",
+    "kanji": "着替える"
+  },
+  {
+    "hiragana": "きかんしゃ",
+    "kanji": "機関車"
+  },
+  {
+    "hiragana": "きごう",
+    "kanji": "記号"
+  },
+  {
+    "hiragana": "きざむ",
+    "kanji": "刻む"
+  },
+  {
+    "hiragana": "きじゅん",
+    "kanji": "規準"
+  },
+  {
+    "hiragana": "きしょう",
+    "kanji": "起床"
+  },
+  {
+    "hiragana": "きせる",
+    "kanji": "着せる"
+  },
+  {
+    "hiragana": "きゃくせき",
+    "kanji": "客席"
+  },
+  {
+    "hiragana": "きゃくま",
+    "kanji": "客間"
+  },
+  {
+    "hiragana": "きゅうぎょう",
+    "kanji": "休業"
+  },
+  {
+    "hiragana": "きゅうこう",
+    "kanji": "休講"
+  },
+  {
+    "hiragana": "きゅうよ",
+    "kanji": "給与"
+  },
+  {
+    "hiragana": "きよい",
+    "kanji": "清い"
+  },
+  {
+    "hiragana": "きょうか",
+    "kanji": "強化"
+  },
+  {
+    "hiragana": "きょうかい",
+    "kanji": "境界"
+  },
+  {
+    "hiragana": "ぎょうじ",
+    "kanji": "行事"
+  },
+  {
+    "hiragana": "ぎょうれつ",
+    "kanji": "行列"
+  },
+  {
+    "hiragana": "ぎょぎょう",
+    "kanji": "漁業"
+  },
+  {
+    "hiragana": "きょくせん",
+    "kanji": "曲線"
+  },
+  {
+    "hiragana": "きりつ",
+    "kanji": "規律"
+  },
+  {
+    "hiragana": "きをつける",
+    "kanji": "気を付ける"
+  },
+  {
+    "hiragana": "きんぎょ",
+    "kanji": "金魚"
+  },
+  {
+    "hiragana": "くいき",
+    "kanji": "区域"
+  },
+  {
+    "hiragana": "ぐうすう",
+    "kanji": "偶数"
+  },
+  {
+    "hiragana": "くうそう",
+    "kanji": "空想"
+  },
+  {
+    "hiragana": "くうちゅう",
+    "kanji": "空中"
+  },
+  {
+    "hiragana": "くぎる",
+    "kanji": "区切る"
+  },
+  {
+    "hiragana": "くじょう",
+    "kanji": "苦情"
+  },
+  {
+    "hiragana": "くしん",
+    "kanji": "苦心"
+  },
+  {
+    "hiragana": "くすりゆび",
+    "kanji": "薬指"
+  },
+  {
+    "hiragana": "くちべに",
+    "kanji": "口紅"
+  },
+  {
+    "hiragana": "くばる",
+    "kanji": "配る"
+  },
+  {
+    "hiragana": "くふう",
+    "kanji": "工夫"
+  },
+  {
+    "hiragana": "くぶん",
+    "kanji": "区分"
+  },
+  {
+    "hiragana": "くみあわせ",
+    "kanji": "組合せ"
+  },
+  {
+    "hiragana": "くみたてる",
+    "kanji": "組み立てる"
+  },
+  {
+    "hiragana": "けいご",
+    "kanji": "敬語"
+  },
+  {
+    "hiragana": "けいしき",
+    "kanji": "形式"
+  },
+  {
+    "hiragana": "けいと",
+    "kanji": "毛糸"
+  },
+  {
+    "hiragana": "けいど",
+    "kanji": "経度"
+  },
+  {
+    "hiragana": "げいのう",
+    "kanji": "芸能"
+  },
+  {
+    "hiragana": "けいば",
+    "kanji": "競馬"
+  },
+  {
+    "hiragana": "けいび",
+    "kanji": "警備"
+  },
+  {
+    "hiragana": "けいようし",
+    "kanji": "形容詞"
+  },
+  {
+    "hiragana": "けいようどうし",
+    "kanji": "形容動詞"
+  },
+  {
+    "hiragana": "げか",
+    "kanji": "外科"
+  },
+  {
+    "hiragana": "けがわ",
+    "kanji": "毛皮"
+  },
+  {
+    "hiragana": "げしゃ",
+    "kanji": "下車"
+  },
+  {
+    "hiragana": "げすい",
+    "kanji": "下水"
+  },
+  {
+    "hiragana": "けつあつ",
+    "kanji": "血圧"
+  },
+  {
+    "hiragana": "げっきゅう",
+    "kanji": "月給"
+  },
+  {
+    "hiragana": "げつまつ",
+    "kanji": "月末"
+  },
+  {
+    "hiragana": "けはい",
+    "kanji": "気配"
+  },
+  {
+    "hiragana": "げひん",
+    "kanji": "下品"
+  },
+  {
+    "hiragana": "けむい",
+    "kanji": "煙い"
+  },
+  {
+    "hiragana": "けわしい",
+    "kanji": "険しい"
+  },
+  {
+    "hiragana": "けんがく",
+    "kanji": "見学"
+  },
+  {
+    "hiragana": "げんさん",
+    "kanji": "原産"
+  },
+  {
+    "hiragana": "げんし",
+    "kanji": "原始"
+  },
+  {
+    "hiragana": "けんちょう",
+    "kanji": "県庁"
+  },
+  {
+    "hiragana": "げんど",
+    "kanji": "限度"
+  },
+  {
+    "hiragana": "げんに",
+    "kanji": "現に"
+  },
+  {
+    "hiragana": "げんり",
+    "kanji": "原理"
+  },
+  {
+    "hiragana": "げんりょう",
+    "kanji": "原料"
+  },
+  {
+    "hiragana": "こいしい",
+    "kanji": "恋しい"
+  },
+  {
+    "hiragana": "こういん",
+    "kanji": "工員"
+  },
+  {
+    "hiragana": "ごういん",
+    "kanji": "強引"
+  },
+  {
+    "hiragana": "こうがい",
+    "kanji": "公害"
+  },
+  {
+    "hiragana": "こうきょう",
+    "kanji": "公共"
+  },
+  {
+    "hiragana": "こうげい",
+    "kanji": "工芸"
+  },
+  {
+    "hiragana": "こうさ",
+    "kanji": "交差"
+  },
+  {
+    "hiragana": "こうし",
+    "kanji": "講師"
+  },
+  {
+    "hiragana": "こうじ",
+    "kanji": "工事"
+  },
+  {
+    "hiragana": "こうしき",
+    "kanji": "公式"
+  },
+  {
+    "hiragana": "こうじつ",
+    "kanji": "口実"
+  },
+  {
+    "hiragana": "こうすい",
+    "kanji": "香水"
+  },
+  {
+    "hiragana": "こうせん",
+    "kanji": "光線"
+  },
+  {
+    "hiragana": "こうそう",
+    "kanji": "高層"
+  },
+  {
+    "hiragana": "こうぞう",
+    "kanji": "構造"
+  },
+  {
+    "hiragana": "こうたい",
+    "kanji": "交替"
+  },
+  {
+    "hiragana": "こうち",
+    "kanji": "耕地"
+  },
+  {
+    "hiragana": "こうつうきかん",
+    "kanji": "交通機関"
+  },
+  {
+    "hiragana": "こうてい",
+    "kanji": "校庭"
+  },
+  {
+    "hiragana": "こうてい",
+    "kanji": "肯定"
+  },
+  {
+    "hiragana": "こうど",
+    "kanji": "高度"
+  },
+  {
+    "hiragana": "こうとう",
+    "kanji": "高等"
+  },
+  {
+    "hiragana": "ごうどう",
+    "kanji": "合同"
+  },
+  {
+    "hiragana": "こうとうがっこう",
+    "kanji": "高等学校"
+  },
+  {
+    "hiragana": "こうひょう",
+    "kanji": "公表"
+  },
+  {
+    "hiragana": "こうぶつ",
+    "kanji": "鉱物"
+  },
+  {
+    "hiragana": "こうむ",
+    "kanji": "公務"
+  },
+  {
+    "hiragana": "こうよう",
+    "kanji": "紅葉"
+  },
+  {
+    "hiragana": "ごうり",
+    "kanji": "合理"
+  },
+  {
+    "hiragana": "こうりゅう",
+    "kanji": "交流"
+  },
+  {
+    "hiragana": "ごうりゅう",
+    "kanji": "合流"
+  },
+  {
+    "hiragana": "こうりょく",
+    "kanji": "効力"
+  },
+  {
+    "hiragana": "こくおう",
+    "kanji": "国王"
+  },
+  {
+    "hiragana": "こくりつ",
+    "kanji": "国立"
+  },
+  {
+    "hiragana": "ごくろうさま",
+    "kanji": "ご苦労様"
+  },
+  {
+    "hiragana": "こごえる",
+    "kanji": "凍える"
+  },
+  {
+    "hiragana": "こころあたり",
+    "kanji": "心当たり"
+  },
+  {
+    "hiragana": "こころえる",
+    "kanji": "心得る"
+  },
+  {
+    "hiragana": "こしかけ",
+    "kanji": "腰掛け"
+  },
+  {
+    "hiragana": "こしかける",
+    "kanji": "腰掛ける"
+  },
+  {
+    "hiragana": "ごじゅうおん",
+    "kanji": "五十音"
+  },
+  {
+    "hiragana": "こたい",
+    "kanji": "個体"
+  },
+  {
+    "hiragana": "ことづける",
+    "kanji": "言付ける"
+  },
+  {
+    "hiragana": "こゆび",
+    "kanji": "小指"
+  },
+  {
+    "hiragana": "ころがす",
+    "kanji": "転がす"
+  },
+  {
+    "hiragana": "ころがる",
+    "kanji": "転がる"
+  },
+  {
+    "hiragana": "こんごう",
+    "kanji": "混合"
+  },
+  {
+    "hiragana": "ざいがく",
+    "kanji": "在学"
+  },
+  {
+    "hiragana": "さいさん",
+    "kanji": "再三"
+  },
+  {
+    "hiragana": "さいじつ",
+    "kanji": "祭日"
+  },
+  {
+    "hiragana": "さいてん",
+    "kanji": "採点"
+  },
+  {
+    "hiragana": "ざいもく",
+    "kanji": "材木"
+  },
+  {
+    "hiragana": "さかさ",
+    "kanji": "逆さ"
+  },
+  {
+    "hiragana": "さかさま",
+    "kanji": "逆様"
+  },
+  {
+    "hiragana": "さがす",
+    "kanji": "捜す"
+  },
+  {
+    "hiragana": "さかば",
+    "kanji": "酒場"
+  },
+  {
+    "hiragana": "さきおととい",
+    "kanji": "一昨昨日"
+  },
+  {
+    "hiragana": "さきほど",
+    "kanji": "先程"
+  },
+  {
+    "hiragana": "さくしゃ",
+    "kanji": "作者"
+  },
+  {
+    "hiragana": "さくせい",
+    "kanji": "作成"
+  },
+  {
+    "hiragana": "さぐる",
+    "kanji": "探る"
+  },
+  {
+    "hiragana": "さしつかえ",
+    "kanji": "差し支え"
+  },
+  {
+    "hiragana": "さしひき",
+    "kanji": "差し引き"
+  },
+  {
+    "hiragana": "さしみ",
+    "kanji": "刺身"
+  },
+  {
+    "hiragana": "さすが",
+    "kanji": "流石"
+  },
+  {
+    "hiragana": "ざつおん",
+    "kanji": "雑音"
+  },
+  {
+    "hiragana": "さっそく",
+    "kanji": "早速"
+  },
+  {
+    "hiragana": "ざぶとん",
+    "kanji": "座布団"
+  },
+  {
+    "hiragana": "さんかく",
+    "kanji": "三角"
+  },
+  {
+    "hiragana": "さんすう",
+    "kanji": "算数"
+  },
+  {
+    "hiragana": "さんち",
+    "kanji": "産地"
+  },
+  {
+    "hiragana": "さんりん",
+    "kanji": "山林"
+  },
+  {
+    "hiragana": "しあがる",
+    "kanji": "仕上がる"
+  },
+  {
+    "hiragana": "しあさって",
+    "kanji": "明明後日"
+  },
+  {
+    "hiragana": "じいん",
+    "kanji": "寺院"
+  },
+  {
+    "hiragana": "しおからい",
+    "kanji": "塩辛い"
+  },
+  {
+    "hiragana": "しかくい",
+    "kanji": "四角い"
+  },
+  {
+    "hiragana": "しかたがない",
+    "kanji": "仕方がない"
+  },
+  {
+    "hiragana": "じかんわり",
+    "kanji": "時間割"
+  },
+  {
+    "hiragana": "じさん",
+    "kanji": "持参"
+  },
+  {
+    "hiragana": "ししゃごにゅう",
+    "kanji": "四捨五入"
+  },
+  {
+    "hiragana": "しじゅう",
+    "kanji": "始終"
+  },
+  {
+    "hiragana": "じしゅう",
+    "kanji": "自習"
+  },
+  {
+    "hiragana": "しずまる",
+    "kanji": "静まる"
+  },
+  {
+    "hiragana": "しぜんかがく",
+    "kanji": "自然科学"
+  },
+  {
+    "hiragana": "じそく",
+    "kanji": "時速"
+  },
+  {
+    "hiragana": "しそん",
+    "kanji": "子孫"
+  },
+  {
+    "hiragana": "したい",
+    "kanji": "死体"
+  },
+  {
+    "hiragana": "したがき",
+    "kanji": "下書き"
+  },
+  {
+    "hiragana": "じたく",
+    "kanji": "自宅"
+  },
+  {
+    "hiragana": "したまち",
+    "kanji": "下町"
+  },
+  {
+    "hiragana": "じち",
+    "kanji": "自治"
+  },
+  {
+    "hiragana": "じっかん",
+    "kanji": "実感"
+  },
+  {
+    "hiragana": "しっき",
+    "kanji": "湿気"
+  },
+  {
+    "hiragana": "じっしゅう",
+    "kanji": "実習"
+  },
+  {
+    "hiragana": "じっせき",
+    "kanji": "実績"
+  },
+  {
+    "hiragana": "じつぶつ",
+    "kanji": "実物"
+  },
+  {
+    "hiragana": "じつよう",
+    "kanji": "実用"
+  },
+  {
+    "hiragana": "じつれい",
+    "kanji": "実例"
+  },
+  {
+    "hiragana": "しつれん",
+    "kanji": "失恋"
+  },
+  {
+    "hiragana": "してい",
+    "kanji": "指定"
+  },
+  {
+    "hiragana": "してつ",
+    "kanji": "私鉄"
+  },
+  {
+    "hiragana": "じめん",
+    "kanji": "地面"
+  },
+  {
+    "hiragana": "しゃかいかがく",
+    "kanji": "社会科学"
+  },
+  {
+    "hiragana": "じゃくてん",
+    "kanji": "弱点"
+  },
+  {
+    "hiragana": "しゃこ",
+    "kanji": "車庫"
+  },
+  {
+    "hiragana": "しゃせい",
+    "kanji": "写生"
+  },
+  {
+    "hiragana": "しゃせつ",
+    "kanji": "社説"
+  },
+  {
+    "hiragana": "しゃりん",
+    "kanji": "車輪"
+  },
+  {
+    "hiragana": "しゅうかい",
+    "kanji": "集会"
+  },
+  {
+    "hiragana": "しゅうきん",
+    "kanji": "集金"
+  },
+  {
+    "hiragana": "しゅうごう",
+    "kanji": "集合"
+  },
+  {
+    "hiragana": "しゅうじ",
+    "kanji": "習字"
+  },
+  {
+    "hiragana": "しゅうてん",
+    "kanji": "終点"
+  },
+  {
+    "hiragana": "じゅうてん",
+    "kanji": "重点"
+  },
+  {
+    "hiragana": "しゅうへん",
+    "kanji": "周辺"
+  },
+  {
+    "hiragana": "じゅうやく",
+    "kanji": "重役"
+  },
+  {
+    "hiragana": "しゅうりょう",
+    "kanji": "終了"
+  },
+  {
+    "hiragana": "じゅうりょう",
+    "kanji": "重量"
+  },
+  {
+    "hiragana": "じゅうりょく",
+    "kanji": "重力"
+  },
+  {
+    "hiragana": "しゅくじつ",
+    "kanji": "祝日"
+  },
+  {
+    "hiragana": "じゅけん",
+    "kanji": "受験"
+  },
+  {
+    "hiragana": "しゅご",
+    "kanji": "主語"
+  },
+  {
+    "hiragana": "しゅじん",
+    "kanji": "主人"
+  },
+  {
+    "hiragana": "しゅっきん",
+    "kanji": "出勤"
+  },
+  {
+    "hiragana": "じゅつご",
+    "kanji": "述語"
+  },
+  {
+    "hiragana": "しゅやく",
+    "kanji": "主役"
+  },
+  {
+    "hiragana": "じゅんじょう",
+    "kanji": "純情"
+  },
+  {
+    "hiragana": "しょうか",
+    "kanji": "消化"
+  },
+  {
+    "hiragana": "しょうがくせい",
+    "kanji": "小学生"
+  },
+  {
+    "hiragana": "じょうき",
+    "kanji": "蒸気"
+  },
+  {
+    "hiragana": "じょうぎ",
+    "kanji": "定規"
+  },
+  {
+    "hiragana": "しょうぎょう",
+    "kanji": "商業"
+  },
+  {
+    "hiragana": "しょうきょくてき",
+    "kanji": "消極的"
+  },
+  {
+    "hiragana": "しょうきん",
+    "kanji": "賞金"
+  },
+  {
+    "hiragana": "じょうげ",
+    "kanji": "上下"
+  },
+  {
+    "hiragana": "しょうしゃ",
+    "kanji": "商社"
+  },
+  {
+    "hiragana": "じょうしゃ",
+    "kanji": "乗車"
+  },
+  {
+    "hiragana": "しょうすう",
+    "kanji": "小数"
+  },
+  {
+    "hiragana": "しょうずる",
+    "kanji": "生ずる"
+  },
+  {
+    "hiragana": "しょうてん",
+    "kanji": "商店"
+  },
+  {
+    "hiragana": "しょうどく",
+    "kanji": "消毒"
+  },
+  {
+    "hiragana": "しょうはい",
+    "kanji": "勝敗"
+  },
+  {
+    "hiragana": "じょうはつ",
+    "kanji": "蒸発"
+  },
+  {
+    "hiragana": "じょうひん",
+    "kanji": "上品"
+  },
+  {
+    "hiragana": "しょうぶ",
+    "kanji": "勝負"
+  },
+  {
+    "hiragana": "しょうべん",
+    "kanji": "小便"
+  },
+  {
+    "hiragana": "しょうぼうしょ",
+    "kanji": "消防署"
+  },
+  {
+    "hiragana": "しょうみ",
+    "kanji": "正味"
+  },
+  {
+    "hiragana": "しょうめん",
+    "kanji": "正面"
+  },
+  {
+    "hiragana": "しょくえん",
+    "kanji": "食塩"
+  },
+  {
+    "hiragana": "しょくにん",
+    "kanji": "職人"
+  },
+  {
+    "hiragana": "しょくば",
+    "kanji": "職場"
+  },
+  {
+    "hiragana": "しょせき",
+    "kanji": "書籍"
+  },
+  {
+    "hiragana": "しょてん",
+    "kanji": "書店"
+  },
+  {
+    "hiragana": "しょどう",
+    "kanji": "書道"
+  },
+  {
+    "hiragana": "しょほ",
+    "kanji": "初歩"
+  },
+  {
+    "hiragana": "しらが",
+    "kanji": "白髪"
+  },
+  {
+    "hiragana": "しりつ",
+    "kanji": "私立"
+  },
+  {
+    "hiragana": "しりょう",
+    "kanji": "資料"
+  },
+  {
+    "hiragana": "しんくう",
+    "kanji": "真空"
+  },
+  {
+    "hiragana": "じんじ",
+    "kanji": "人事"
+  },
+  {
+    "hiragana": "しんしん",
+    "kanji": "心身"
+  },
+  {
+    "hiragana": "しんずる",
+    "kanji": "信ずる"
+  },
+  {
+    "hiragana": "じんぞう",
+    "kanji": "人造"
+  },
+  {
+    "hiragana": "しんだい",
+    "kanji": "寝台"
+  },
+  {
+    "hiragana": "じんぶんかがく",
+    "kanji": "人文科学"
+  },
+  {
+    "hiragana": "じんめい",
+    "kanji": "人命"
+  },
+  {
+    "hiragana": "しんや",
+    "kanji": "深夜"
+  },
+  {
+    "hiragana": "しんりん",
+    "kanji": "森林"
+  },
+  {
+    "hiragana": "しんるい",
+    "kanji": "親類"
+  },
+  {
+    "hiragana": "しんろ",
+    "kanji": "針路"
+  },
+  {
+    "hiragana": "しんわ",
+    "kanji": "神話"
+  },
+  {
+    "hiragana": "すいさん",
+    "kanji": "水産"
+  },
+  {
+    "hiragana": "すいじょうき",
+    "kanji": "水蒸気"
+  },
+  {
+    "hiragana": "すいてき",
+    "kanji": "水滴"
+  },
+  {
+    "hiragana": "すいとう",
+    "kanji": "水筒"
+  },
+  {
+    "hiragana": "すいぶん",
+    "kanji": "水分"
+  },
+  {
+    "hiragana": "すいへい",
+    "kanji": "水平"
+  },
+  {
+    "hiragana": "すいへいせん",
+    "kanji": "水平線"
+  },
+  {
+    "hiragana": "すいめん",
+    "kanji": "水面"
+  },
+  {
+    "hiragana": "すえっこ",
+    "kanji": "末っ子"
+  },
+  {
+    "hiragana": "すきずき",
+    "kanji": "好き好き"
+  },
+  {
+    "hiragana": "ずけい",
+    "kanji": "図形"
+  },
+  {
+    "hiragana": "すずむ",
+    "kanji": "涼む"
+  },
+  {
+    "hiragana": "ずのう",
+    "kanji": "頭脳"
+  },
+  {
+    "hiragana": "ずひょう",
+    "kanji": "図表"
+  },
+  {
+    "hiragana": "すまい",
+    "kanji": "住まい"
+  },
+  {
+    "hiragana": "ぜいかん",
+    "kanji": "税関"
+  },
+  {
+    "hiragana": "せいさく",
+    "kanji": "制作"
+  },
+  {
+    "hiragana": "せいしょ",
+    "kanji": "清書"
+  },
+  {
+    "hiragana": "せいしょうねん",
+    "kanji": "青少年"
+  },
+  {
+    "hiragana": "せいそう",
+    "kanji": "清掃"
+  },
+  {
+    "hiragana": "せいぞん",
+    "kanji": "生存"
+  },
+  {
+    "hiragana": "せいとう",
+    "kanji": "政党"
+  },
+  {
+    "hiragana": "せいのう",
+    "kanji": "性能"
+  },
+  {
+    "hiragana": "せいぶん",
+    "kanji": "成分"
+  },
+  {
+    "hiragana": "せいべつ",
+    "kanji": "性別"
+  },
+  {
+    "hiragana": "せいほうけい",
+    "kanji": "正方形"
+  },
+  {
+    "hiragana": "せいもん",
+    "kanji": "正門"
+  },
+  {
+    "hiragana": "せいりつ",
+    "kanji": "成立"
+  },
+  {
+    "hiragana": "せおう",
+    "kanji": "背負う"
+  },
+  {
+    "hiragana": "せきどう",
+    "kanji": "赤道"
+  },
+  {
+    "hiragana": "せっかく",
+    "kanji": "折角"
+  },
+  {
+    "hiragana": "せっきん",
+    "kanji": "接近"
+  },
+  {
+    "hiragana": "せっする",
+    "kanji": "接する"
+  },
+  {
+    "hiragana": "せつぞく",
+    "kanji": "接続"
+  },
+  {
+    "hiragana": "せりふ",
+    "kanji": "台詞"
+  },
+  {
+    "hiragana": "ぜんご",
+    "kanji": "前後"
+  },
+  {
+    "hiragana": "ぜんしゅう",
+    "kanji": "全集"
+  },
+  {
+    "hiragana": "せんせい",
+    "kanji": "専制"
+  },
+  {
+    "hiragana": "せんぞ",
+    "kanji": "先祖"
+  },
+  {
+    "hiragana": "せんとう",
+    "kanji": "先頭"
+  },
+  {
+    "hiragana": "ぜんぱん",
+    "kanji": "全般"
+  },
+  {
+    "hiragana": "せんめん",
+    "kanji": "洗面"
+  },
+  {
+    "hiragana": "ぜんりょく",
+    "kanji": "全力"
+  },
+  {
+    "hiragana": "せんろ",
+    "kanji": "線路"
+  },
+  {
+    "hiragana": "そうい",
+    "kanji": "相違"
+  },
+  {
+    "hiragana": "ぞうげん",
+    "kanji": "増減"
+  },
+  {
+    "hiragana": "そうご",
+    "kanji": "相互"
+  },
+  {
+    "hiragana": "ぞうせん",
+    "kanji": "造船"
+  },
+  {
+    "hiragana": "ぞうだい",
+    "kanji": "増大"
+  },
+  {
+    "hiragana": "そうべつ",
+    "kanji": "送別"
+  },
+  {
+    "hiragana": "そうりだいじん",
+    "kanji": "総理大臣"
+  },
+  {
+    "hiragana": "そうりょう",
+    "kanji": "送料"
+  },
+  {
+    "hiragana": "そくたつ",
+    "kanji": "速達"
+  },
+  {
+    "hiragana": "そくてい",
+    "kanji": "測定"
+  },
+  {
+    "hiragana": "そくりょう",
+    "kanji": "測量"
+  },
+  {
+    "hiragana": "そくりょく",
+    "kanji": "速力"
+  },
+  {
+    "hiragana": "そせん",
+    "kanji": "祖先"
+  },
+  {
+    "hiragana": "そっちょく",
+    "kanji": "卒直"
+  },
+  {
+    "hiragana": "そのほか",
+    "kanji": "その他"
+  },
+  {
+    "hiragana": "ぞんじる",
+    "kanji": "存じる"
+  },
+  {
+    "hiragana": "ぞんずる",
+    "kanji": "存ずる"
+  },
+  {
+    "hiragana": "そんとく",
+    "kanji": "損得"
+  },
+  {
+    "hiragana": "だいがくいん",
+    "kanji": "大学院"
+  },
+  {
+    "hiragana": "だいく",
+    "kanji": "大工"
+  },
+  {
+    "hiragana": "たいして",
+    "kanji": "大して"
+  },
+  {
+    "hiragana": "だいしょう",
+    "kanji": "大小"
+  },
+  {
+    "hiragana": "たいせい",
+    "kanji": "体制"
+  },
+  {
+    "hiragana": "たいせき",
+    "kanji": "体積"
+  },
+  {
+    "hiragana": "たいそう",
+    "kanji": "大層"
+  },
+  {
+    "hiragana": "だいぶん",
+    "kanji": "大分"
+  },
+  {
+    "hiragana": "たいぼく",
+    "kanji": "大木"
+  },
+  {
+    "hiragana": "だいめいし",
+    "kanji": "代名詞"
+  },
+  {
+    "hiragana": "たいりつ",
+    "kanji": "対立"
+  },
+  {
+    "hiragana": "たうえ",
+    "kanji": "田植え"
+  },
+  {
+    "hiragana": "たえず",
+    "kanji": "絶えず"
+  },
+  {
+    "hiragana": "たがやす",
+    "kanji": "耕す"
+  },
+  {
+    "hiragana": "たけ",
+    "kanji": "竹"
+  },
+  {
+    "hiragana": "たちどまる",
+    "kanji": "立ち止まる"
+  },
+  {
+    "hiragana": "たとえる",
+    "kanji": "例える"
+  },
+  {
+    "hiragana": "たのもしい",
+    "kanji": "頼もしい"
+  },
+  {
+    "hiragana": "たる",
+    "kanji": "足る"
+  },
+  {
+    "hiragana": "だんかい",
+    "kanji": "段階"
+  },
+  {
+    "hiragana": "たんき",
+    "kanji": "短期"
+  },
+  {
+    "hiragana": "たんこう",
+    "kanji": "炭鉱"
+  },
+  {
+    "hiragana": "たんしょ",
+    "kanji": "短所"
+  },
+  {
+    "hiragana": "だんすい",
+    "kanji": "断水"
+  },
+  {
+    "hiragana": "たんすう",
+    "kanji": "単数"
+  },
+  {
+    "hiragana": "だんち",
+    "kanji": "団地"
+  },
+  {
+    "hiragana": "だんてい",
+    "kanji": "断定"
+  },
+  {
+    "hiragana": "たんぺん",
+    "kanji": "短編"
+  },
+  {
+    "hiragana": "たんぼ",
+    "kanji": "田ぼ"
+  },
+  {
+    "hiragana": "ちかすい",
+    "kanji": "地下水"
+  },
+  {
+    "hiragana": "ちかづける",
+    "kanji": "近付ける"
+  },
+  {
+    "hiragana": "ちかよる",
+    "kanji": "近寄る"
+  },
+  {
+    "hiragana": "ちからづよい",
+    "kanji": "力強い"
+  },
+  {
+    "hiragana": "ちしつ",
+    "kanji": "地質"
+  },
+  {
+    "hiragana": "ちじん",
+    "kanji": "知人"
+  },
+  {
+    "hiragana": "ちたい",
+    "kanji": "地帯"
+  },
+  {
+    "hiragana": "ちてん",
+    "kanji": "地点"
+  },
+  {
+    "hiragana": "ちめい",
+    "kanji": "地名"
+  },
+  {
+    "hiragana": "ちゃいろい",
+    "kanji": "茶色い"
+  },
+  {
+    "hiragana": "ちゅうかん",
+    "kanji": "中間"
+  },
+  {
+    "hiragana": "ちゅうせい",
+    "kanji": "中世"
+  },
+  {
+    "hiragana": "ちゅうせい",
+    "kanji": "中性"
+  },
+  {
+    "hiragana": "ちゅうと",
+    "kanji": "中途"
+  },
+  {
+    "hiragana": "ちゅうねん",
+    "kanji": "中年"
+  },
+  {
+    "hiragana": "ちょうか",
+    "kanji": "超過"
+  },
+  {
+    "hiragana": "ちょうしょ",
+    "kanji": "長所"
+  },
+  {
+    "hiragana": "ちょうじょ",
+    "kanji": "長女"
+  },
+  {
+    "hiragana": "ちょうたん",
+    "kanji": "長短"
+  },
+  {
+    "hiragana": "ちょうてん",
+    "kanji": "頂点"
+  },
+  {
+    "hiragana": "ちょうなん",
+    "kanji": "長男"
+  },
+  {
+    "hiragana": "ちょうほうけい",
+    "kanji": "長方形"
+  },
+  {
+    "hiragana": "ちょうみりょう",
+    "kanji": "調味料"
+  },
+  {
+    "hiragana": "ちょくご",
+    "kanji": "直後"
+  },
+  {
+    "hiragana": "ちょくせん",
+    "kanji": "直線"
+  },
+  {
+    "hiragana": "ちょくぜん",
+    "kanji": "直前"
+  },
+  {
+    "hiragana": "ちょくつう",
+    "kanji": "直通"
+  },
+  {
+    "hiragana": "ちょくりゅう",
+    "kanji": "直流"
+  },
+  {
+    "hiragana": "ちょぞう",
+    "kanji": "貯蔵"
+  },
+  {
+    "hiragana": "ちょっかく",
+    "kanji": "直角"
+  },
+  {
+    "hiragana": "ちらかす",
+    "kanji": "散らかす"
+  },
+  {
+    "hiragana": "ちらかる",
+    "kanji": "散らかる"
+  },
+  {
+    "hiragana": "ついか",
+    "kanji": "追加"
+  },
+  {
+    "hiragana": "つうずる",
+    "kanji": "通ずる"
+  },
+  {
+    "hiragana": "つうち",
+    "kanji": "通知"
+  },
+  {
+    "hiragana": "つうよう",
+    "kanji": "通用"
+  },
+  {
+    "hiragana": "つうろ",
+    "kanji": "通路"
+  },
+  {
+    "hiragana": "つきあたり",
+    "kanji": "突き当たり"
+  },
+  {
+    "hiragana": "つきあたる",
+    "kanji": "突き当たる"
+  },
+  {
+    "hiragana": "つきひ",
+    "kanji": "月日"
+  },
+  {
+    "hiragana": "つっこむ",
+    "kanji": "突っ込む"
+  },
+  {
+    "hiragana": "つとめる",
+    "kanji": "努める"
+  },
+  {
+    "hiragana": "つとめる",
+    "kanji": "務める"
+  },
+  {
+    "hiragana": "つぶ",
+    "kanji": "粒"
+  },
+  {
+    "hiragana": "つまる",
+    "kanji": "詰まる"
+  },
+  {
+    "hiragana": "つよき",
+    "kanji": "強気"
+  },
+  {
+    "hiragana": "てあらい",
+    "kanji": "手洗い"
+  },
+  {
+    "hiragana": "ていいん",
+    "kanji": "定員"
+  },
+  {
+    "hiragana": "ていか",
+    "kanji": "低下"
+  },
+  {
+    "hiragana": "ていきけん",
+    "kanji": "定期券"
+  },
+  {
+    "hiragana": "ていきゅうび",
+    "kanji": "定休日"
+  },
+  {
+    "hiragana": "ていし",
+    "kanji": "停止"
+  },
+  {
+    "hiragana": "ていしゃ",
+    "kanji": "停車"
+  },
+  {
+    "hiragana": "でいり",
+    "kanji": "出入り"
+  },
+  {
+    "hiragana": "でいりぐち",
+    "kanji": "出入口"
+  },
+  {
+    "hiragana": "ていれ",
+    "kanji": "手入れ"
+  },
+  {
+    "hiragana": "できあがり",
+    "kanji": "出来上がり"
+  },
+  {
+    "hiragana": "できあがる",
+    "kanji": "出来上がる"
+  },
+  {
+    "hiragana": "てきかく",
+    "kanji": "的確"
+  },
+  {
+    "hiragana": "てきかく",
+    "kanji": "適確"
+  },
+  {
+    "hiragana": "てくび",
+    "kanji": "手首"
+  },
+  {
+    "hiragana": "でし",
+    "kanji": "弟子"
+  },
+  {
+    "hiragana": "てっきょう",
+    "kanji": "鉄橋"
+  },
+  {
+    "hiragana": "てつづき",
+    "kanji": "手続き"
+  },
+  {
+    "hiragana": "てまえ",
+    "kanji": "手前"
+  },
+  {
+    "hiragana": "でむかえ",
+    "kanji": "出迎え"
+  },
+  {
+    "hiragana": "てらす",
+    "kanji": "照らす"
+  },
+  {
+    "hiragana": "てる",
+    "kanji": "照る"
+  },
+  {
+    "hiragana": "でんき",
+    "kanji": "伝記"
+  },
+  {
+    "hiragana": "でんきゅう",
+    "kanji": "電球"
+  },
+  {
+    "hiragana": "てんすう",
+    "kanji": "点数"
+  },
+  {
+    "hiragana": "でんち",
+    "kanji": "電池"
+  },
+  {
+    "hiragana": "でんちゅう",
+    "kanji": "電柱"
+  },
+  {
+    "hiragana": "でんぱ",
+    "kanji": "電波"
+  },
+  {
+    "hiragana": "でんりゅう",
+    "kanji": "電流"
+  },
+  {
+    "hiragana": "でんりょく",
+    "kanji": "電力"
+  },
+  {
+    "hiragana": "といあわせ",
+    "kanji": "問い合わせ"
+  },
+  {
+    "hiragana": "どう",
+    "kanji": "銅"
+  },
+  {
+    "hiragana": "どうかく",
+    "kanji": "同格"
+  },
+  {
+    "hiragana": "どうさ",
+    "kanji": "動作"
+  },
+  {
+    "hiragana": "とうざい",
+    "kanji": "東西"
+  },
+  {
+    "hiragana": "とうじつ",
+    "kanji": "当日"
+  },
+  {
+    "hiragana": "とうしょ",
+    "kanji": "投書"
+  },
+  {
+    "hiragana": "とうじょう",
+    "kanji": "登場"
+  },
+  {
+    "hiragana": "とうだい",
+    "kanji": "灯台"
+  },
+  {
+    "hiragana": "とうなん",
+    "kanji": "盗難"
+  },
+  {
+    "hiragana": "とうばん",
+    "kanji": "当番"
+  },
+  {
+    "hiragana": "とうぶん",
+    "kanji": "等分"
+  },
+  {
+    "hiragana": "とうゆ",
+    "kanji": "灯油"
+  },
+  {
+    "hiragana": "どうわ",
+    "kanji": "童話"
+  },
+  {
+    "hiragana": "とおりかかる",
+    "kanji": "通り掛かる"
+  },
+  {
+    "hiragana": "とかす",
+    "kanji": "溶かす"
+  },
+  {
+    "hiragana": "とくしょく",
+    "kanji": "特色"
+  },
+  {
+    "hiragana": "とくてい",
+    "kanji": "特定"
+  },
+  {
+    "hiragana": "とくばい",
+    "kanji": "特売"
+  },
+  {
+    "hiragana": "とけこむ",
+    "kanji": "溶け込む"
+  },
+  {
+    "hiragana": "どける",
+    "kanji": "退ける"
+  },
+  {
+    "hiragana": "とこのま",
+    "kanji": "床の間"
+  },
+  {
+    "hiragana": "としん",
+    "kanji": "都心"
+  },
+  {
+    "hiragana": "とどまる",
+    "kanji": "留まる"
+  },
+  {
+    "hiragana": "どなる",
+    "kanji": "怒鳴る"
+  },
+  {
+    "hiragana": "どの",
+    "kanji": "殿"
+  },
+  {
+    "hiragana": "とびこむ",
+    "kanji": "飛び込む"
+  },
+  {
+    "hiragana": "とまる",
+    "kanji": "留まる"
+  },
+  {
+    "hiragana": "とらえる",
+    "kanji": "捕える"
+  },
+  {
+    "hiragana": "とりいれる",
+    "kanji": "取り入れる"
+  },
+  {
+    "hiragana": "とりけす",
+    "kanji": "取り消す"
+  },
+  {
+    "hiragana": "とりだす",
+    "kanji": "取り出す"
+  },
+  {
+    "hiragana": "とる",
+    "kanji": "採る"
+  },
+  {
+    "hiragana": "とる",
+    "kanji": "捕る"
+  },
+  {
+    "hiragana": "ないか",
+    "kanji": "内科"
+  },
+  {
+    "hiragana": "ないせん",
+    "kanji": "内線"
+  },
+  {
+    "hiragana": "なかなおり",
+    "kanji": "仲直り"
+  },
+  {
+    "hiragana": "ながびく",
+    "kanji": "長引く"
+  },
+  {
+    "hiragana": "なかゆび",
+    "kanji": "中指"
+  },
+  {
+    "hiragana": "なかよし",
+    "kanji": "仲良し"
+  },
+  {
+    "hiragana": "なだらか",
+    "kanji": "傾らか"
+  },
+  {
+    "hiragana": "なにぶん",
+    "kanji": "何分"
+  },
+  {
+    "hiragana": "なまいき",
+    "kanji": "生意気"
+  },
+  {
+    "hiragana": "なみき",
+    "kanji": "並木"
+  },
+  {
+    "hiragana": "なんきょく",
+    "kanji": "南極"
+  },
+  {
+    "hiragana": "なんべい",
+    "kanji": "南米"
+  },
+  {
+    "hiragana": "なんぼく",
+    "kanji": "南北"
+  },
+  {
+    "hiragana": "にがす",
+    "kanji": "逃がす"
+  },
+  {
+    "hiragana": "にくい",
+    "kanji": "憎い"
+  },
+  {
+    "hiragana": "にくむ",
+    "kanji": "憎む"
+  },
+  {
+    "hiragana": "にくらしい",
+    "kanji": "憎らしい"
+  },
+  {
+    "hiragana": "にちじ",
+    "kanji": "日時"
+  },
+  {
+    "hiragana": "にちようひん",
+    "kanji": "日用品"
+  },
+  {
+    "hiragana": "にっか",
+    "kanji": "日課"
+  },
+  {
+    "hiragana": "にってい",
+    "kanji": "日程"
+  },
+  {
+    "hiragana": "にぶい",
+    "kanji": "鈍い"
+  },
+  {
+    "hiragana": "にゅうしゃ",
+    "kanji": "入社"
+  },
+  {
+    "hiragana": "ねっする",
+    "kanji": "熱する"
+  },
+  {
+    "hiragana": "ねまき",
+    "kanji": "寝巻"
+  },
+  {
+    "hiragana": "ねまき",
+    "kanji": "寝間着"
+  },
+  {
+    "hiragana": "ねんど",
+    "kanji": "年度"
+  },
+  {
+    "hiragana": "のうさんぶつ",
+    "kanji": "農産物"
+  },
+  {
+    "hiragana": "のうそん",
+    "kanji": "農村"
+  },
+  {
+    "hiragana": "のうど",
+    "kanji": "濃度"
+  },
+  {
+    "hiragana": "のうやく",
+    "kanji": "農薬"
+  },
+  {
+    "hiragana": "のこらず",
+    "kanji": "残らず"
+  },
+  {
+    "hiragana": "のぼり",
+    "kanji": "上り"
+  },
+  {
+    "hiragana": "のりかえ",
+    "kanji": "乗換"
+  },
+  {
+    "hiragana": "のりこし",
+    "kanji": "乗り越し"
+  },
+  {
+    "hiragana": "のろい",
+    "kanji": "鈍い"
+  },
+  {
+    "hiragana": "はいいろ",
+    "kanji": "灰色"
+  },
+  {
+    "hiragana": "ばいてん",
+    "kanji": "売店"
+  },
+  {
+    "hiragana": "ばいばい",
+    "kanji": "売買"
+  },
+  {
+    "hiragana": "はぐるま",
+    "kanji": "歯車"
+  },
+  {
+    "hiragana": "はさまる",
+    "kanji": "挟まる"
+  },
+  {
+    "hiragana": "はさむ",
+    "kanji": "挟む"
+  },
+  {
+    "hiragana": "はじめに",
+    "kanji": "始めに"
+  },
+  {
+    "hiragana": "はじめに",
+    "kanji": "初めに"
+  },
+  {
+    "hiragana": "はだぎ",
+    "kanji": "肌着"
+  },
+  {
+    "hiragana": "はたして",
+    "kanji": "果して"
+  },
+  {
+    "hiragana": "はつ",
+    "kanji": "発"
+  },
+  {
+    "hiragana": "はっそう",
+    "kanji": "発想"
+  },
+  {
+    "hiragana": "はつでん",
+    "kanji": "発電"
+  },
+  {
+    "hiragana": "はつばい",
+    "kanji": "発売"
+  },
+  {
+    "hiragana": "はなしあい",
+    "kanji": "話合い"
+  },
+  {
+    "hiragana": "はなしかける",
+    "kanji": "話し掛ける"
+  },
+  {
+    "hiragana": "はなしちゅう",
+    "kanji": "話中"
+  },
+  {
+    "hiragana": "はなび",
+    "kanji": "花火"
+  },
+  {
+    "hiragana": "はへん",
+    "kanji": "破片"
+  },
+  {
+    "hiragana": "はみがき",
+    "kanji": "歯磨き"
+  },
+  {
+    "hiragana": "はやくち",
+    "kanji": "早口"
+  },
+  {
+    "hiragana": "はらいこむ",
+    "kanji": "払い込む"
+  },
+  {
+    "hiragana": "はらいもどす",
+    "kanji": "払い戻す"
+  },
+  {
+    "hiragana": "はりがね",
+    "kanji": "針金"
+  },
+  {
+    "hiragana": "はんえい",
+    "kanji": "反映"
+  },
+  {
+    "hiragana": "はんこ",
+    "kanji": "判子"
+  },
+  {
+    "hiragana": "ばんざい",
+    "kanji": "万歳"
+  },
+  {
+    "hiragana": "はんじ",
+    "kanji": "判事"
+  },
+  {
+    "hiragana": "ばんち",
+    "kanji": "番地"
+  },
+  {
+    "hiragana": "はんとう",
+    "kanji": "半島"
+  },
+  {
+    "hiragana": "ひあたり",
+    "kanji": "日当たり"
+  },
+  {
+    "hiragana": "ひがえり",
+    "kanji": "日帰り"
+  },
+  {
+    "hiragana": "ひきうける",
+    "kanji": "引受る"
+  },
+  {
+    "hiragana": "ひきかえす",
+    "kanji": "引き返す"
+  },
+  {
+    "hiragana": "ひきざん",
+    "kanji": "引算"
+  },
+  {
+    "hiragana": "ひきだす",
+    "kanji": "引き出す"
+  },
+  {
+    "hiragana": "ひきとめる",
+    "kanji": "引き止める"
+  },
+  {
+    "hiragana": "ひきわけ",
+    "kanji": "引分け"
+  },
+  {
+    "hiragana": "ひっかかる",
+    "kanji": "引っ掛かる"
+  },
+  {
+    "hiragana": "ひっき",
+    "kanji": "筆記"
+  },
+  {
+    "hiragana": "ひっこむ",
+    "kanji": "引っ込む"
+  },
+  {
+    "hiragana": "ひっしゃ",
+    "kanji": "筆者"
+  },
+  {
+    "hiragana": "ひとさしゆび",
+    "kanji": "人差指"
+  },
+  {
+    "hiragana": "ひととおり",
+    "kanji": "一通り"
+  },
+  {
+    "hiragana": "ひとどおり",
+    "kanji": "人通り"
+  },
+  {
+    "hiragana": "ひとやすみ",
+    "kanji": "一休み"
+  },
+  {
+    "hiragana": "ひにく",
+    "kanji": "皮肉"
+  },
+  {
+    "hiragana": "ひにち",
+    "kanji": "日日"
+  },
+  {
+    "hiragana": "ひのいり",
+    "kanji": "日の入り"
+  },
+  {
+    "hiragana": "ひので",
+    "kanji": "日の出"
+  },
+  {
+    "hiragana": "ひふ",
+    "kanji": "皮膚"
+  },
+  {
+    "hiragana": "びよう",
+    "kanji": "美容"
+  },
+  {
+    "hiragana": "ひょうし",
+    "kanji": "表紙"
+  },
+  {
+    "hiragana": "ひるね",
+    "kanji": "昼寝"
+  },
+  {
+    "hiragana": "ひろさ",
+    "kanji": "広さ"
+  },
+  {
+    "hiragana": "ひろば",
+    "kanji": "広場"
+  },
+  {
+    "hiragana": "びんづめ",
+    "kanji": "瓶詰"
+  },
+  {
+    "hiragana": "ふうせん",
+    "kanji": "風船"
+  },
+  {
+    "hiragana": "ふうん",
+    "kanji": "不運"
+  },
+  {
+    "hiragana": "ふきそく",
+    "kanji": "不規則"
+  },
+  {
+    "hiragana": "ふきん",
+    "kanji": "付近"
+  },
+  {
+    "hiragana": "ふくし",
+    "kanji": "副詞"
+  },
+  {
+    "hiragana": "ふくしゃ",
+    "kanji": "複写"
+  },
+  {
+    "hiragana": "ふくすう",
+    "kanji": "複数"
+  },
+  {
+    "hiragana": "ふける",
+    "kanji": "更ける"
+  },
+  {
+    "hiragana": "ふごう",
+    "kanji": "符号"
+  },
+  {
+    "hiragana": "ふさい",
+    "kanji": "夫妻"
+  },
+  {
+    "hiragana": "ぶしゅ",
+    "kanji": "部首"
+  },
+  {
+    "hiragana": "ふなびん",
+    "kanji": "船便"
+  },
+  {
+    "hiragana": "ぶひん",
+    "kanji": "部品"
+  },
+  {
+    "hiragana": "ふぶき",
+    "kanji": "吹雪"
+  },
+  {
+    "hiragana": "ふぼ",
+    "kanji": "父母"
+  },
+  {
+    "hiragana": "ふるさと",
+    "kanji": "古里"
+  },
+  {
+    "hiragana": "ぶんかい",
+    "kanji": "分解"
+  },
+  {
+    "hiragana": "ぶんげい",
+    "kanji": "文芸"
+  },
+  {
+    "hiragana": "ぶんすう",
+    "kanji": "分数"
+  },
+  {
+    "hiragana": "ぶんたい",
+    "kanji": "文体"
+  },
+  {
+    "hiragana": "ぶんぷ",
+    "kanji": "分布"
+  },
+  {
+    "hiragana": "ぶんりょう",
+    "kanji": "分量"
+  },
+  {
+    "hiragana": "ぶんるい",
+    "kanji": "分類"
+  },
+  {
+    "hiragana": "へいかい",
+    "kanji": "閉会"
+  },
+  {
+    "hiragana": "へいき",
+    "kanji": "平気"
+  },
+  {
+    "hiragana": "へいこう",
+    "kanji": "並行"
+  },
+  {
+    "hiragana": "へいじつ",
+    "kanji": "平日"
+  },
+  {
+    "hiragana": "へいや",
+    "kanji": "平野"
+  },
+  {
+    "hiragana": "へんしゅう",
+    "kanji": "編集"
+  },
+  {
+    "hiragana": "べんじょ",
+    "kanji": "便所"
+  },
+  {
+    "hiragana": "ほうがく",
+    "kanji": "方角"
+  },
+  {
+    "hiragana": "ほうげん",
+    "kanji": "方言"
+  },
+  {
+    "hiragana": "ぼうし",
+    "kanji": "防止"
+  },
+  {
+    "hiragana": "ほうしん",
+    "kanji": "方針"
+  },
+  {
+    "hiragana": "ほうそく",
+    "kanji": "法則"
+  },
+  {
+    "hiragana": "ほうたい",
+    "kanji": "包帯"
+  },
+  {
+    "hiragana": "ほうていしき",
+    "kanji": "方程式"
+  },
+  {
+    "hiragana": "ぼうはん",
+    "kanji": "防犯"
+  },
+  {
+    "hiragana": "ほうめん",
+    "kanji": "方面"
+  },
+  {
+    "hiragana": "ほうる",
+    "kanji": "放る"
+  },
+  {
+    "hiragana": "ぼしゅう",
+    "kanji": "募集"
+  },
+  {
+    "hiragana": "ほす",
+    "kanji": "干す"
+  },
+  {
+    "hiragana": "ほっきょく",
+    "kanji": "北極"
+  },
+  {
+    "hiragana": "ほどく",
+    "kanji": "解く"
+  },
+  {
+    "hiragana": "ほる",
+    "kanji": "掘る"
+  },
+  {
+    "hiragana": "ほんぶ",
+    "kanji": "本部"
+  },
+  {
+    "hiragana": "ほんらい",
+    "kanji": "本来"
+  },
+  {
+    "hiragana": "まいすう",
+    "kanji": "枚数"
+  },
+  {
+    "hiragana": "まいど",
+    "kanji": "毎度"
+  },
+  {
+    "hiragana": "まげる",
+    "kanji": "曲げる"
+  },
+  {
+    "hiragana": "まちあいしつ",
+    "kanji": "待合室"
+  },
+  {
+    "hiragana": "まちあわせる",
+    "kanji": "待ち合わせる"
+  },
+  {
+    "hiragana": "まっくら",
+    "kanji": "真っ暗"
+  },
+  {
+    "hiragana": "まっくろ",
+    "kanji": "真っ黒"
+  },
+  {
+    "hiragana": "まっさお",
+    "kanji": "真っ青"
+  },
+  {
+    "hiragana": "まっさき",
+    "kanji": "真っ先"
+  },
+  {
+    "hiragana": "まっしろ",
+    "kanji": "真っ白"
+  },
+  {
+    "hiragana": "まつる",
+    "kanji": "祭る"
+  },
+  {
+    "hiragana": "まどぐち",
+    "kanji": "窓口"
+  },
+  {
+    "hiragana": "まねる",
+    "kanji": "真似る"
+  },
+  {
+    "hiragana": "まもなく",
+    "kanji": "間も無く"
+  },
+  {
+    "hiragana": "まわりみち",
+    "kanji": "回り道"
+  },
+  {
+    "hiragana": "まんいん",
+    "kanji": "満員"
+  },
+  {
+    "hiragana": "まんてん",
+    "kanji": "満点"
+  },
+  {
+    "hiragana": "みあげる",
+    "kanji": "見上げる"
+  },
+  {
+    "hiragana": "みおくる",
+    "kanji": "見送る"
+  },
+  {
+    "hiragana": "みおろす",
+    "kanji": "見下ろす"
+  },
+  {
+    "hiragana": "みかけ",
+    "kanji": "見掛け"
+  },
+  {
+    "hiragana": "みかづき",
+    "kanji": "三日月"
+  },
+  {
+    "hiragana": "みずから",
+    "kanji": "自ら"
+  },
+  {
+    "hiragana": "みずぎ",
+    "kanji": "水着"
+  },
+  {
+    "hiragana": "みせや",
+    "kanji": "店屋"
+  },
+  {
+    "hiragana": "みだし",
+    "kanji": "見出し"
+  },
+  {
+    "hiragana": "みちじゅん",
+    "kanji": "道順"
+  },
+  {
+    "hiragana": "みつめる",
+    "kanji": "見詰める"
+  },
+  {
+    "hiragana": "みなおす",
+    "kanji": "見直す"
+  },
+  {
+    "hiragana": "みなれる",
+    "kanji": "見慣れる"
+  },
+  {
+    "hiragana": "みのる",
+    "kanji": "実る"
+  },
+  {
+    "hiragana": "みぶん",
+    "kanji": "身分"
+  },
+  {
+    "hiragana": "みほん",
+    "kanji": "見本"
+  },
+  {
+    "hiragana": "みまう",
+    "kanji": "見舞う"
+  },
+  {
+    "hiragana": "みまん",
+    "kanji": "未満"
+  },
+  {
+    "hiragana": "みょうじ",
+    "kanji": "名字"
+  },
+  {
+    "hiragana": "みんかん",
+    "kanji": "民間"
+  },
+  {
+    "hiragana": "むげん",
+    "kanji": "無限"
+  },
+  {
+    "hiragana": "むじ",
+    "kanji": "無地"
+  },
+  {
+    "hiragana": "むすう",
+    "kanji": "無数"
+  },
+  {
+    "hiragana": "むれ",
+    "kanji": "群れ"
+  },
+  {
+    "hiragana": "めいさく",
+    "kanji": "名作"
+  },
+  {
+    "hiragana": "めいしょ",
+    "kanji": "名所"
+  },
+  {
+    "hiragana": "めいしん",
+    "kanji": "迷信"
+  },
+  {
+    "hiragana": "めいずる",
+    "kanji": "命ずる"
+  },
+  {
+    "hiragana": "めいぶつ",
+    "kanji": "名物"
+  },
+  {
+    "hiragana": "めざす",
+    "kanji": "目指す"
+  },
+  {
+    "hiragana": "めざまし",
+    "kanji": "目覚し"
+  },
+  {
+    "hiragana": "めした",
+    "kanji": "目下"
+  },
+  {
+    "hiragana": "めじるし",
+    "kanji": "目印"
+  },
+  {
+    "hiragana": "めだつ",
+    "kanji": "目立つ"
+  },
+  {
+    "hiragana": "めやす",
+    "kanji": "目安"
+  },
+  {
+    "hiragana": "めんせき",
+    "kanji": "面積"
+  },
+  {
+    "hiragana": "もくざい",
+    "kanji": "木材"
+  },
+  {
+    "hiragana": "もくじ",
+    "kanji": "目次"
+  },
+  {
+    "hiragana": "ものおき",
+    "kanji": "物置"
+  },
+  {
+    "hiragana": "ものがたる",
+    "kanji": "物語る"
+  },
+  {
+    "hiragana": "ものさし",
+    "kanji": "物差し"
+  },
+  {
+    "hiragana": "もみじ",
+    "kanji": "紅葉"
+  },
+  {
+    "hiragana": "もんどう",
+    "kanji": "問答"
+  },
+  {
+    "hiragana": "やかん",
+    "kanji": "夜間"
+  },
+  {
+    "hiragana": "やくしゃ",
+    "kanji": "役者"
+  },
+  {
+    "hiragana": "やくしょ",
+    "kanji": "役所"
+  },
+  {
+    "hiragana": "やくにん",
+    "kanji": "役人"
+  },
+  {
+    "hiragana": "やくひん",
+    "kanji": "薬品"
+  },
+  {
+    "hiragana": "やくめ",
+    "kanji": "役目"
+  },
+  {
+    "hiragana": "やこう",
+    "kanji": "夜行"
+  },
+  {
+    "hiragana": "やっきょく",
+    "kanji": "薬局"
+  },
+  {
+    "hiragana": "やぬし",
+    "kanji": "家主"
+  },
+  {
+    "hiragana": "やぶく",
+    "kanji": "破く"
+  },
+  {
+    "hiragana": "やわらかい",
+    "kanji": "軟らかい"
+  },
+  {
+    "hiragana": "ゆうえんち",
+    "kanji": "遊園地"
+  },
+  {
+    "hiragana": "ゆうかん",
+    "kanji": "夕刊"
+  },
+  {
+    "hiragana": "ゆうそう",
+    "kanji": "郵送"
+  },
+  {
+    "hiragana": "ゆうだち",
+    "kanji": "夕立"
+  },
+  {
+    "hiragana": "ゆうひ",
+    "kanji": "夕日"
+  },
+  {
+    "hiragana": "ゆうりょう",
+    "kanji": "有料"
+  },
+  {
+    "hiragana": "ゆかた",
+    "kanji": "浴衣"
+  },
+  {
+    "hiragana": "ゆくえ",
+    "kanji": "行方"
+  },
+  {
+    "hiragana": "ゆげ",
+    "kanji": "湯気"
+  },
+  {
+    "hiragana": "ゆけつ",
+    "kanji": "輸血"
+  },
+  {
+    "hiragana": "ゆそう",
+    "kanji": "輸送"
+  },
+  {
+    "hiragana": "ゆだん",
+    "kanji": "油断"
+  },
+  {
+    "hiragana": "ゆのみ",
+    "kanji": "湯飲み"
+  },
+  {
+    "hiragana": "ようがん",
+    "kanji": "溶岩"
+  },
+  {
+    "hiragana": "ようご",
+    "kanji": "用語"
+  },
+  {
+    "hiragana": "ようじ",
+    "kanji": "幼児"
+  },
+  {
+    "hiragana": "ようせき",
+    "kanji": "容積"
+  },
+  {
+    "hiragana": "ようと",
+    "kanji": "用途"
+  },
+  {
+    "hiragana": "ようひんてん",
+    "kanji": "洋品店"
+  },
+  {
+    "hiragana": "ようりょう",
+    "kanji": "要領"
+  },
+  {
+    "hiragana": "よけい",
+    "kanji": "余計"
+  },
+  {
+    "hiragana": "よそ",
+    "kanji": "余所"
+  },
+  {
+    "hiragana": "よつかど",
+    "kanji": "四つ角"
+  },
+  {
+    "hiragana": "よび",
+    "kanji": "予備"
+  },
+  {
+    "hiragana": "よびかける",
+    "kanji": "呼び掛ける"
+  },
+  {
+    "hiragana": "よびだす",
+    "kanji": "呼び出す"
+  },
+  {
+    "hiragana": "らいにち",
+    "kanji": "来日"
+  },
+  {
+    "hiragana": "らんぼう",
+    "kanji": "乱暴"
+  },
+  {
+    "hiragana": "りか",
+    "kanji": "理科"
+  },
+  {
+    "hiragana": "りがい",
+    "kanji": "利害"
+  },
+  {
+    "hiragana": "りゃくす",
+    "kanji": "略す"
+  },
+  {
+    "hiragana": "りゅういき",
+    "kanji": "流域"
+  },
+  {
+    "hiragana": "りょうがわ",
+    "kanji": "両側"
+  },
+  {
+    "hiragana": "りょうし",
+    "kanji": "漁師"
+  },
+  {
+    "hiragana": "りょうじ",
+    "kanji": "領事"
+  },
+  {
+    "hiragana": "りょうしゅう",
+    "kanji": "領収"
+  },
+  {
+    "hiragana": "るすばん",
+    "kanji": "留守番"
+  },
+  {
+    "hiragana": "れいてん",
+    "kanji": "零点"
+  },
+  {
+    "hiragana": "れいとう",
+    "kanji": "冷凍"
+  },
+  {
+    "hiragana": "れっとう",
+    "kanji": "列島"
+  },
+  {
+    "hiragana": "れんごう",
+    "kanji": "連合"
+  },
+  {
+    "hiragana": "ろくおん",
+    "kanji": "録音"
+  },
+  {
+    "hiragana": "ろんずる",
+    "kanji": "論ずる"
+  },
+  {
+    "hiragana": "わえい",
+    "kanji": "和英"
+  },
+  {
+    "hiragana": "わふく",
+    "kanji": "和服"
+  },
+  {
+    "hiragana": "わりあいに",
+    "kanji": "割合に"
+  },
+  {
+    "hiragana": "わりざん",
+    "kanji": "割算"
+  },
+  {
+    "hiragana": "わりと",
+    "kanji": "割と"
+  },
+  {
+    "hiragana": "わりびき",
+    "kanji": "割引"
+  }
+]

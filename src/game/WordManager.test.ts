@@ -29,12 +29,12 @@ describe('WordManager kanji mode matching', () => {
     expect(matches.length).toBe(0);
   });
 
-  it('matches vertically (子供)', () => {
+  it('matches vertically (学校)', () => {
     const wm = new WordManager();
     wm.setMode('kanji');
     const grid = new Grid(6, 10);
-    fillVertical(grid, 0, ['子', '供']);
+    fillVertical(grid, 0, ['学', '校']);
     const matches = wm.checkMatches(grid);
-    expect(matches.some(m => m.kanji === '子供')).toBe(true);
+    expect(matches.some(m => m.kanji === '学校')).toBe(true);
   });
 });
