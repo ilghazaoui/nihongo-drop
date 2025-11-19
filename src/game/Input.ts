@@ -1,5 +1,4 @@
 export class Input {
-    mouseX: number = 0;
     isDown: boolean = false;
     onMove: ((x: number) => void) | null = null;
     onDrop: (() => void) | null = null;
@@ -9,6 +8,7 @@ export class Input {
     onStartOrRestart: (() => void) | null = null;
     container: HTMLElement;
     gridWidth: number;
+    private touchActive: boolean = false; // Track active touch to avoid double events
 
     constructor(containerId: string, gridWidth: number) {
         this.container = document.getElementById(containerId)!;
@@ -17,21 +17,37 @@ export class Input {
     }
 
     setupListeners() {
-        // Mouse events
-        this.container.addEventListener('mousemove', (e) => this.handleMove(e.clientX));
-        this.container.addEventListener('mousedown', () => this.handleDown());
-        this.container.addEventListener('mouseup', () => this.handleUp());
-
-        // Touch events
-        this.container.addEventListener('touchmove', (e) => {
-            e.preventDefault(); // Prevent scrolling
-            this.handleMove(e.touches[0].clientX);
-        }, { passive: false });
-        this.container.addEventListener('touchstart', () => {
+        // Mouse events (ignore synthetic mouse events after touch by checking touchActive)
+        this.container.addEventListener('mousemove', (e) => {
+            if (this.touchActive) return;
+            this.handleMove(e.clientX);
+        });
+        this.container.addEventListener('mousedown', () => {
+            if (this.touchActive) return;
             this.handleDown();
         });
+        this.container.addEventListener('mouseup', () => {
+            if (this.touchActive) return;
+            this.handleUp();
+        });
+
+        // Touch events
+        this.container.addEventListener('touchstart', () => {
+            this.touchActive = true;
+            this.handleDown();
+        });
+        this.container.addEventListener('touchmove', (e) => {
+            e.preventDefault(); // Prevent scrolling
+            if (e.touches.length > 0) {
+                this.handleMove(e.touches[0].clientX);
+            }
+        }, { passive: false });
         this.container.addEventListener('touchend', () => {
             this.handleUp();
+            // Small timeout to ensure synthetic mouse events (if any) are ignored
+            setTimeout(() => {
+                this.touchActive = false;
+            }, 0);
         });
 
         // Keyboard events
