@@ -3,10 +3,10 @@ import { Game } from './game/Game';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1 class="game-title">Nihongo Drop</h1>
     <div id="game-container"></div>
     <div id="game-overlay">
       <div class="overlay-content">
+        <h1 class="game-title">Nihongo Drop</h1>
         <button id="start-btn" class="game-button">Start Game</button>
         <button id="restart-btn" class="game-button" style="display: none;">Restart Game</button>
       </div>
@@ -21,6 +21,7 @@ const game = new Game();
 
 function startGame() {
   console.log('Game Started');
+  // Hide overlay and buttons, keep title visible
   overlay.style.display = 'none';
   startBtn.style.display = 'none';
   restartBtn.style.display = 'none';
@@ -29,6 +30,7 @@ function startGame() {
 
 function restartGame() {
   console.log('Game Restarted');
+  // Hide overlay, only show restart button logic via game.onGameOver
   overlay.style.display = 'none';
   startBtn.style.display = 'none';
   restartBtn.style.display = 'block';
@@ -44,12 +46,12 @@ restartBtn.addEventListener('click', () => {
   restartGame();
 });
 
-// Permettre au Game d'utiliser la même logique quand Enter/Espace sont pressés
-// (via Game.input.onStartOrRestart)
+// Allow Game to use the same logic when Enter/Space are pressed
 (game as any).startGameFromUI = startGame;
 (game as any).restartGameFromUI = restartGame;
 
 game.onGameOver = () => {
+  // Show overlay with restart button, title stays visible above
   startBtn.style.display = 'none';
   restartBtn.style.display = 'block';
   overlay.style.display = 'flex';
