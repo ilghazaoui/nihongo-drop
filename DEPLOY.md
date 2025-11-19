@@ -1,119 +1,118 @@
-# 📘 Instructions de déploiement GitHub Pages
+# 📘 GitHub Pages deployment instructions
 
-## Étape 1 : Créer un dépôt GitHub
+## Step 1: Create a GitHub repository
 
-1. Va sur [github.com](https://github.com) et connecte-toi
-2. Clique sur le bouton **"New repository"** (ou "+" en haut à droite → "New repository")
-3. Nomme ton dépôt : **`hiragana-drop`** (ou un autre nom)
-4. Laisse-le **public** (obligatoire pour GitHub Pages gratuit)
-5. **Ne coche pas** "Initialize with README" (tu en as déjà un)
-6. Clique sur **"Create repository"**
+1. Go to [github.com](https://github.com) and sign in
+2. Click the **"New repository"** button (or "+" in the top right → "New repository")
+3. Name your repo: **`hiragana-drop`** (or any other name)
+4. Leave it **public** (required for free GitHub Pages)
+5. **Do not check** "Initialize with README" (you already have one)
+6. Click **"Create repository"**
 
-## Étape 2 : Configuration importante dans vite.config.ts
+## Step 2: Important config in vite.config.ts
 
-**IMPORTANT** : Ouvre le fichier `vite.config.ts` et remplace le nom du repo par le tien :
+**IMPORTANT**: Open `vite.config.ts` and adjust the repo name:
 
 ```typescript
 export default defineConfig({
-  base: '/hiragana-drop/', // ⚠️ Remplace par '/ton-nom-de-repo/'
+  base: '/hiragana-drop/', // ⚠️ Replace with '/your-repo-name/'
 })
 ```
 
-Par exemple, si ton dépôt s'appelle `nihongo-game`, mets :
+For example, if your repo is called `nihongo-game`, use:
 ```typescript
 base: '/nihongo-game/'
 ```
 
-## Étape 3 : Initialiser Git et pusher le code
+## Step 3: Initialize Git and push the code
 
-Dans ton terminal PowerShell, dans le dossier du projet :
+In your PowerShell terminal, inside the project folder:
 
 ```powershell
-# Initialiser git (si pas déjà fait)
+# Initialize git (if not already done)
 git init
 
-# Ajouter tous les fichiers
+# Add all files
 git add .
 
-# Faire le premier commit
+# Create the first commit
 git commit -m "Initial commit: Nihongo Drop game"
 
-# Ajouter l'origine (remplace VOTRE-USERNAME et le nom du repo)
-git remote add origin https://github.com/VOTRE-USERNAME/hiragana-drop.git
+# Add the remote (replace YOUR-USERNAME and repo name)
+git remote add origin https://github.com/YOUR-USERNAME/hiragana-drop.git
 
-# Renommer la branche en main si nécessaire
+# Rename the branch to main if necessary
 git branch -M main
 
-# Pousser vers GitHub
+# Push to GitHub
 git push -u origin main
 ```
 
-## Étape 4 : Activer GitHub Pages
+## Step 4: Enable GitHub Pages
 
-1. Va sur ton dépôt GitHub dans ton navigateur
-2. Clique sur **"Settings"** (onglet en haut)
-3. Dans le menu de gauche, clique sur **"Pages"**
-4. Sous **"Source"**, sélectionne **"GitHub Actions"**
-5. C'est tout ! Le workflow se lancera automatiquement
+1. Go to your GitHub repo in the browser
+2. Click the **"Settings"** tab
+3. In the left menu, click **"Pages"**
+4. Under **"Source"**, select **"GitHub Actions"**
+5. That's it! The workflow will start automatically
 
-## Étape 5 : Vérifier le déploiement
+## Step 5: Check the deployment
 
-1. Va dans l'onglet **"Actions"** de ton dépôt
-2. Tu devrais voir le workflow "Deploy static content to Pages" en cours
-3. Attends qu'il devienne vert ✅ (environ 1-2 minutes)
-4. Ton jeu sera accessible à : `https://VOTRE-USERNAME.github.io/hiragana-drop/`
+1. Go to the **"Actions"** tab of your repo
+2. You should see the "Deploy static content to Pages" workflow running
+3. Wait for it to turn green ✅ (about 1–2 minutes)
+4. Your game will be available at: `https://YOUR-USERNAME.github.io/hiragana-drop/`
 
-## 🔄 Déploiements futurs
+## 🔄 Future deployments
 
-Chaque fois que tu pousses du code sur la branche `main`, le jeu se redéploie automatiquement !
+Every time you push code to the `main` branch, the game is redeployed automatically:
 
 ```powershell
 git add .
-git commit -m "Description de tes changements"
+git commit -m "Describe your changes"
 git push
 ```
 
-## 🚀 Alternative : Déploiement manuel
+## 🚀 Alternative: Manual deployment
 
-Si tu préfères déployer manuellement sans GitHub Actions :
+If you prefer to deploy manually without GitHub Actions:
 
 ```powershell
 npm run deploy
 ```
 
-Cette commande :
-1. Build le projet
-2. Crée une branche `gh-pages`
-3. Y pousse le contenu du dossier `dist`
+This command:
+1. Builds the project
+2. Creates a `gh-pages` branch
+3. Pushes the contents of the `dist` folder to it
 
-⚠️ **Note** : Si tu utilises cette méthode, va dans Settings → Pages et sélectionne la branche `gh-pages` comme source.
+⚠️ **Note**: If you use this method, go to Settings → Pages and select the `gh-pages` branch as the source.
 
-## ❓ Problèmes fréquents
+## ❓ Common issues
 
-### Le jeu affiche une page blanche
-- Vérifie que le `base` dans `vite.config.ts` correspond exactement au nom de ton dépôt
-- Exemple : si ton dépôt est `https://github.com/john/my-game`, mets `base: '/my-game/'`
+### The game shows a blank page
+- Make sure `base` in `vite.config.ts` exactly matches your repo name
+- Example: if your repo is `https://github.com/john/my-game`, set `base: '/my-game/'`
 
-### Erreur 404 sur GitHub Pages
-- Attends 2-3 minutes après le déploiement
-- Vérifie que GitHub Pages est bien activé dans Settings → Pages
-- Le workflow doit être en vert dans l'onglet Actions
+### 404 error on GitHub Pages
+- Wait 2–3 minutes after deployment
+- Make sure GitHub Pages is enabled under Settings → Pages
+- The workflow should be green in the Actions tab
 
-### Le workflow ne se lance pas
-- Vérifie que le fichier `.github/workflows/deploy.yml` existe
-- Vérifie que tu as bien push sur la branche `main` (pas `master`)
+### The workflow does not start
+- Check that the `.github/workflows/deploy.yml` file exists
+- Verify that you pushed to the `main` branch (not `master`)
 
-## 📝 Mettre à jour le README
+## 📝 Update the README
 
-N'oublie pas de mettre à jour l'URL dans `README.md` :
+Don't forget to update the URL in `README.md`:
 
 ```markdown
-**[Jouer maintenant sur GitHub Pages](https://VOTRE-USERNAME.github.io/hiragana-drop/)**
+**[Play now on GitHub Pages](https://YOUR-USERNAME.github.io/hiragana-drop/)**
 ```
 
-Remplace `VOTRE-USERNAME` par ton nom d'utilisateur GitHub.
+Replace `YOUR-USERNAME` with your GitHub username.
 
 ---
 
-🎉 **Félicitations !** Ton jeu est maintenant déployé et accessible au monde entier !
-
+🎉 **Congratulations!** Your game is now deployed and accessible to the world!

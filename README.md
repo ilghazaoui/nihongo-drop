@@ -1,61 +1,61 @@
 # Nihongo Drop (にほんご ドロップ)
 
-Un jeu de type Tetris pour apprendre le japonais en s'amusant ! Associe les caractères hiragana pour former des mots de vocabulaire N5.
+A Tetris-style game to learn Japanese while having fun! Match hiragana characters to form JLPT N5 vocabulary words.
 
-## 🎮 Jouer
+## 🎮 Play
 
-**[Jouer maintenant sur GitHub Pages](https://VOTRE-USERNAME.github.io/hiragana-drop/)**
+**[Play now on GitHub Pages](https://VOTRE-USERNAME.github.io/hiragana-drop/)**
 
-## 🕹️ Contrôles
+## 🕹️ Controls
 
-- **Souris/Tactile** : Déplacer le curseur pour positionner, cliquer pour drop rapide
-- **Clavier** :
-  - `←` / `→` : Déplacer à gauche/droite
-  - `↓` : Descendre d'une case
-  - `Espace` ou `Entrée` : Démarrer/Redémarrer la partie
+- **Mouse/Touch**: Move the cursor to position the block, click/tap to hard drop
+- **Keyboard**:
+  - `←` / `→`: Move left/right
+  - `↓`: Move down one cell
+  - `Space` or `Enter`: Start/Restart the game
 
-## 🚀 Développement local
+## 🚀 Local development
 
 ```bash
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Lancer le serveur de développement
+# Start the development server
 npm run dev
 
-# Exécuter les tests
+# Run tests
 npm test
 
-# Build pour production
+# Build for production
 npm run build
 ```
 
-## 📦 Technologies
+## 📦 Tech stack
 
-- **TypeScript** - Langage principal
-- **Vite** - Build tool et dev server
-- **Vitest** - Framework de test
-- **CSS3** - Animations et effets néon
+- **TypeScript** – Main language
+- **Vite** – Build tool and dev server
+- **Vitest** – Test framework
+- **CSS3** – Neon-style animations and effects
 
-## 🎯 Fonctionnalités
+## 🎯 Features
 
-- ✅ Tokenizer hiragana intelligent (gère les petits caractères combinés)
-- ✅ Détection automatique de mots du vocabulaire JLPT N5
-- ✅ Animations de fusion avec effets visuels
-- ✅ Gravité et cascade après les matchs
-- ✅ Support tactile pour mobile
-- ✅ Contrôles clavier complets
+- ✅ Smart hiragana tokenizer (handles combined small characters)
+- ✅ Automatic detection of JLPT N5 vocabulary words
+- ✅ Fuse animations with visual effects
+- ✅ Gravity and cascading after matches
+- ✅ Touch support for mobile
+- ✅ Full keyboard controls
 
-## 📝 Déploiement GitHub Pages
+## 📄 GitHub Pages deployment
 
-Ce projet se déploie automatiquement sur GitHub Pages via GitHub Actions à chaque push sur la branche `main`.
+This project can be deployed to GitHub Pages either automatically via GitHub Actions
+or manually using a helper script.
 
-Ou déployer manuellement :
+Manual deployment:
 ```bash
 npm run deploy
 ```
 
-## 📄 Licence
+## 📜 License
 
 MIT
-
