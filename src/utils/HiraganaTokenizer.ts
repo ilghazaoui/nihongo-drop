@@ -11,8 +11,16 @@ export function tokenize(word: string): string[] {
 
         // Small preceding chars (e.g., っ) combine with FOLLOWING character
         if (smallPrecedingChars.has(char) && nextChar) {
-            tokens.push(char + nextChar);
-            i++; // Skip next char
+            // Check if the character after next is a small succeeding char
+            const charAfterNext = word[i + 2];
+            if (charAfterNext && smallSucceedingChars.has(charAfterNext)) {
+                // Combine all three: っ + し + ゃ = っしゃ
+                tokens.push(char + nextChar + charAfterNext);
+                i += 2; // Skip next two chars
+            } else {
+                tokens.push(char + nextChar);
+                i++; // Skip next char
+            }
             continue;
         }
 
