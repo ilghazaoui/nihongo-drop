@@ -3,8 +3,11 @@ import { Block } from './Block';
 import { Renderer } from './Renderer';
 import { Input } from './Input';
 import { WordManager } from './WordManager';
+import type { WordMatchMode } from './WordManager';
 import { n5_words } from '../data/n5_words';
 import { tokenize } from '../utils/HiraganaTokenizer';
+
+export type GameMode = 'hiragana' | 'kanji';
 
 export class Game {
     grid: Grid;
@@ -19,12 +22,15 @@ export class Game {
     gameOver: boolean = false;
     onGameOver: (() => void) | null = null;
     lastColumn: number = 2; // Default start column
+    mode: GameMode;
 
-    constructor() {
+    constructor(mode: GameMode = 'hiragana') {
+        this.mode = mode;
         this.grid = new Grid(6, 10);
         this.renderer = new Renderer('game-container', 6, 10);
         this.input = new Input('game-container', 6);
         this.wordManager = new WordManager();
+        this.wordManager.setMode(this.mode as WordMatchMode);
 
         this.input.onMove = (col) => {
             if (this.activeBlock && !this.gameOver) {
@@ -86,6 +92,12 @@ export class Game {
         };
     }
 
+    setMode(mode: GameMode) {
+        this.mode = mode;
+        this.wordManager.setMode(this.mode as WordMatchMode);
+        this.reset();
+    }
+
     reset() {
         this.grid = new Grid(6, 10);
         this.activeBlock = null;
@@ -103,13 +115,36 @@ export class Game {
         requestAnimationFrame((time) => this.loop(time));
     }
 
-    spawnBlock() {
-        const randomWordEntry = n5_words[Math.floor(Math.random() * n5_words.length)];
-        const randomWord = randomWordEntry.hiragana;
-        const tokens = tokenize(randomWord);
-        const randomToken = tokens[Math.floor(Math.random() * tokens.length)];
+    private pickRandomWord() {
+        if (this.mode === 'kanji') {
+            const candidates = n5_words.filter(entry => Array.from(entry.kanji).length >= 2);
+            const pool = candidates.length > 0 ? candidates : n5_words;
+            return pool[Math.floor(Math.random() * pool.length)];
+        }
+        return n5_words[Math.floor(Math.random() * n5_words.length)];
+    }
 
-        this.activeBlock = new Block(this.lastColumn, 0, randomToken); // Start in last column
+    private getHiraganaToken(wordHiragana: string): string {
+        const tokens = tokenize(wordHiragana);
+        return tokens[Math.floor(Math.random() * tokens.length)];
+    }
+
+    private getKanjiToken(entry: { hiragana: string; kanji: string }): string {
+        const tokens = tokenize(entry.kanji);
+        return tokens[Math.floor(Math.random() * tokens.length)];
+    }
+
+    spawnBlock() {
+        const entry = this.pickRandomWord();
+        let blockChar: string;
+
+        if (this.mode === 'kanji') {
+            blockChar = this.getKanjiToken(entry);
+        } else {
+            blockChar = this.getHiraganaToken(entry.hiragana);
+        }
+
+        this.activeBlock = new Block(this.lastColumn, 0, blockChar); // Start in last column
 
         // Check collision on spawn (Game Over)
         if (!this.grid.isEmpty(this.activeBlock.x, this.activeBlock.y)) {
