@@ -20,7 +20,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <button id="level-n2" class="level-button" data-level="n2">N2</button>
           <button id="level-n1" class="level-button" data-level="n1">N1</button>
         </div>
-        <div id="final-score" style="display: none;">Final Score: 0</div>
+        <div id="final-score" style="display: none;">Final Score : 0</div>
         <button id="start-btn" class="game-button">Start Game</button>
         <button id="restart-btn" class="game-button" style="display: none;">Restart Game</button>
       </div>
@@ -126,7 +126,7 @@ game.onGameOver = () => {
   // Show overlay with restart button, title stays visible above
   startBtn.style.display = 'none';
   restartBtn.style.display = 'block';
-  finalScoreEl.textContent = `Final Score: ${game.score}`;
+  finalScoreEl.textContent = `Final Score : ${game.score}`;
   finalScoreEl.style.display = 'block';
   overlay.style.display = 'flex';
 };
