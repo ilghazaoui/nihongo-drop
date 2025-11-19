@@ -31,13 +31,16 @@ export class Input {
             this.handleUp();
         });
 
-        // Touch events: tap to move to the tapped column then drop once
+        // Touch events: move the block on touch, drop on release
         this.container.addEventListener('touchstart', (e) => {
             this.touchActive = true;
-            this.handleTouchTap(e);
+            if (e.touches.length > 0) {
+                // Move to the touched column immediately
+                this.handleMove(e.touches[0].clientX);
+            }
         }, { passive: true });
 
-        // Still support touchmove for live positioning if the user drags
+        // Support touchmove for live positioning while dragging
         this.container.addEventListener('touchmove', (e) => {
             e.preventDefault(); // Prevent scrolling
             if (e.touches.length > 0) {
@@ -46,6 +49,10 @@ export class Input {
         }, { passive: false });
 
         this.container.addEventListener('touchend', () => {
+            // Drop the block at the current position when touch is released
+            if (this.onDrop) {
+                this.onDrop();
+            }
             // Small timeout to ensure synthetic mouse events (if any) are ignored
             setTimeout(() => {
                 this.touchActive = false;
@@ -90,23 +97,6 @@ export class Input {
         });
     }
 
-    handleTouchTap(e: TouchEvent) {
-        if (e.touches.length === 0) return;
-        const touch = e.touches[0];
-        const rect = this.container.getBoundingClientRect();
-        const relativeX = touch.clientX - rect.left;
-        const colWidth = rect.width / this.gridWidth;
-        const col = Math.floor(relativeX / colWidth);
-        const clampedCol = Math.max(0, Math.min(this.gridWidth - 1, col));
-
-        // First move active block to this column, then drop once
-        if (this.onMove) {
-            this.onMove(clampedCol);
-        }
-        if (this.onDrop) {
-            this.onDrop();
-        }
-    }
 
     handleMove(clientX: number) {
         const rect = this.container.getBoundingClientRect();
