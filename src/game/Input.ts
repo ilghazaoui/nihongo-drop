@@ -106,10 +106,6 @@ export class Input {
         if (this.onDrop) {
             this.onDrop();
         }
-
-        // Prevent a synthetic mouse event from also triggering a drop
-        this.handleDown();
-        this.handleUp();
     }
 
     handleMove(clientX: number) {
