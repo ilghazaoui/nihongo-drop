@@ -1,108 +1,482 @@
 [
-  { "hiragana": "あか", "kanji": "赤" },
-  { "hiragana": "あお", "kanji": "青" },
-  { "hiragana": "しろ", "kanji": "白" },
-  { "hiragana": "くろ", "kanji": "黒" },
-  { "hiragana": "いえ", "kanji": "家" },
-  { "hiragana": "うえ", "kanji": "上" },
-  { "hiragana": "した", "kanji": "下" },
-  { "hiragana": "なか", "kanji": "中" },
-  { "hiragana": "そと", "kanji": "外" },
-  { "hiragana": "やま", "kanji": "山" },
-  { "hiragana": "かわ", "kanji": "川" },
-  { "hiragana": "うみ", "kanji": "海" },
-  { "hiragana": "そら", "kanji": "空" },
-  { "hiragana": "はな", "kanji": "花" },
-  { "hiragana": "きく", "kanji": "聞く" },
-  { "hiragana": "いく", "kanji": "行く" },
-  { "hiragana": "くる", "kanji": "来る" },
-  { "hiragana": "たべる", "kanji": "食べる" },
-  { "hiragana": "のむ", "kanji": "飲む" },
-  { "hiragana": "よむ", "kanji": "読む" },
-  { "hiragana": "かく", "kanji": "書く" },
-  { "hiragana": "みる", "kanji": "見る" },
-  { "hiragana": "ひと", "kanji": "人" },
-  { "hiragana": "こども", "kanji": "子供" },
-  { "hiragana": "おとな", "kanji": "大人" },
-  { "hiragana": "おとこ", "kanji": "男" },
-  { "hiragana": "おんな", "kanji": "女" },
-  { "hiragana": "ちち", "kanji": "父" },
-  { "hiragana": "はは", "kanji": "母" },
-  { "hiragana": "みみ", "kanji": "耳" },
-  { "hiragana": "くち", "kanji": "口" },
-  { "hiragana": "てあし", "kanji": "手足" },
-  { "hiragana": "あし", "kanji": "足" },
-  { "hiragana": "みぎ", "kanji": "右" },
-  { "hiragana": "ひだり", "kanji": "左" },
-  { "hiragana": "まえ", "kanji": "前" },
-  { "hiragana": "うしろ", "kanji": "後ろ" },
-  { "hiragana": "きた", "kanji": "北" },
-  { "hiragana": "みなみ", "kanji": "南" },
-  { "hiragana": "ひがし", "kanji": "東" },
-  { "hiragana": "にし", "kanji": "西" },
-  { "hiragana": "せんせい", "kanji": "先生" },
-  { "hiragana": "がくせい", "kanji": "学生" },
-  { "hiragana": "がっこう", "kanji": "学校" },
-  { "hiragana": "でんしゃ", "kanji": "電車" },
-  { "hiragana": "じどうしゃ", "kanji": "自動車" },
-  { "hiragana": "じてんしゃ", "kanji": "自転車" },
-  { "hiragana": "とけい", "kanji": "時計" },
-  { "hiragana": "ほん", "kanji": "本" },
-  { "hiragana": "おかね", "kanji": "お金" },
-  { "hiragana": "さかな", "kanji": "魚" },
-  { "hiragana": "にく", "kanji": "肉" },
-  { "hiragana": "やさい", "kanji": "野菜" },
-  { "hiragana": "くだもの", "kanji": "果物" },
-  { "hiragana": "みず", "kanji": "水" },
-  { "hiragana": "おちゃ", "kanji": "お茶" },
-  { "hiragana": "ぎゅうにゅう", "kanji": "牛乳" },
-  { "hiragana": "ごはん", "kanji": "ご飯" },
-  { "hiragana": "えき", "kanji": "駅" },
-  { "hiragana": "みせ", "kanji": "店" },
-  { "hiragana": "くに", "kanji": "国" },
-  { "hiragana": "じかん", "kanji": "時間" },
-  { "hiragana": "いち", "kanji": "一" },
-  { "hiragana": "さん", "kanji": "三" },
-  { "hiragana": "よん", "kanji": "四" },
-  { "hiragana": "ろく", "kanji": "六" },
-  { "hiragana": "なな", "kanji": "七" },
-  { "hiragana": "はち", "kanji": "八" },
-  { "hiragana": "きゅう", "kanji": "九" },
-  { "hiragana": "じゅう", "kanji": "十" },
-  { "hiragana": "ひゃく", "kanji": "百" },
-  { "hiragana": "せん", "kanji": "千" },
-  { "hiragana": "まん", "kanji": "万" },
-  { "hiragana": "えん", "kanji": "円" },
-  { "hiragana": "げつようび", "kanji": "月曜日" },
-  { "hiragana": "かようび", "kanji": "火曜日" },
-  { "hiragana": "すいようび", "kanji": "水曜日" },
-  { "hiragana": "もくようび", "kanji": "木曜日" },
-  { "hiragana": "きんようび", "kanji": "金曜日" },
-  { "hiragana": "どようび", "kanji": "土曜日" },
-  { "hiragana": "にちようび", "kanji": "日曜日" },
-  { "hiragana": "あさ", "kanji": "朝" },
-  { "hiragana": "ひる", "kanji": "昼" },
-  { "hiragana": "ばん", "kanji": "晩" },
-  { "hiragana": "よる", "kanji": "夜" },
-  { "hiragana": "いま", "kanji": "今" },
-  { "hiragana": "きょう", "kanji": "今日" },
-  { "hiragana": "きのう", "kanji": "昨日" },
-  { "hiragana": "あした", "kanji": "明日" },
-  { "hiragana": "まいにち", "kanji": "毎日" },
-  { "hiragana": "らいしゅう", "kanji": "来週" },
-  { "hiragana": "せんしゅう", "kanji": "先週" },
-  { "hiragana": "こんしゅう", "kanji": "今週" },
-  { "hiragana": "らいげつ", "kanji": "来月" },
-  { "hiragana": "せんげつ", "kanji": "先月" },
-  { "hiragana": "こんげつ", "kanji": "今月" },
-  { "hiragana": "らいねん", "kanji": "来年" },
-  { "hiragana": "きょねん", "kanji": "去年" },
-  { "hiragana": "ことし", "kanji": "今年" },
-  { "hiragana": "てんき", "kanji": "天気" },
-  { "hiragana": "あめ", "kanji": "雨" },
-  { "hiragana": "ゆき", "kanji": "雪" },
-  { "hiragana": "かぜ", "kanji": "風" },
-  { "hiragana": "はれ", "kanji": "晴れ" },
-  { "hiragana": "くもり", "kanji": "曇り" }
+  {
+    "hiragana": "あげる",
+    "kanji": "上げる"
+  },
+  {
+    "hiragana": "あと",
+    "kanji": "後"
+  },
+  {
+    "hiragana": "あめ",
+    "kanji": "雨"
+  },
+  {
+    "hiragana": "いち",
+    "kanji": "一"
+  },
+  {
+    "hiragana": "いちにち",
+    "kanji": "一日"
+  },
+  {
+    "hiragana": "いつか",
+    "kanji": "五日"
+  },
+  {
+    "hiragana": "いつつ",
+    "kanji": "五つ"
+  },
+  {
+    "hiragana": "いま",
+    "kanji": "今"
+  },
+  {
+    "hiragana": "いれる",
+    "kanji": "入れる"
+  },
+  {
+    "hiragana": "うえ",
+    "kanji": "上"
+  },
+  {
+    "hiragana": "うしろ",
+    "kanji": "後ろ"
+  },
+  {
+    "hiragana": "うまれる",
+    "kanji": "生まれる"
+  },
+  {
+    "hiragana": "おおきい",
+    "kanji": "大きい"
+  },
+  {
+    "hiragana": "おおきな",
+    "kanji": "大きな"
+  },
+  {
+    "hiragana": "おかあさん",
+    "kanji": "お母さん"
+  },
+  {
+    "hiragana": "おかね",
+    "kanji": "お金"
+  },
+  {
+    "hiragana": "おとうさん",
+    "kanji": "お父さん"
+  },
+  {
+    "hiragana": "おとこ",
+    "kanji": "男"
+  },
+  {
+    "hiragana": "おとこのこ",
+    "kanji": "男の子"
+  },
+  {
+    "hiragana": "おとな",
+    "kanji": "大人"
+  },
+  {
+    "hiragana": "おんな",
+    "kanji": "女"
+  },
+  {
+    "hiragana": "おんなのこ",
+    "kanji": "女の子"
+  },
+  {
+    "hiragana": "がいこく",
+    "kanji": "外国"
+  },
+  {
+    "hiragana": "がいこくじん",
+    "kanji": "外国人"
+  },
+  {
+    "hiragana": "かく",
+    "kanji": "書く"
+  },
+  {
+    "hiragana": "がくせい",
+    "kanji": "学生"
+  },
+  {
+    "hiragana": "がっこう",
+    "kanji": "学校"
+  },
+  {
+    "hiragana": "きく",
+    "kanji": "聞く"
+  },
+  {
+    "hiragana": "きた",
+    "kanji": "北"
+  },
+  {
+    "hiragana": "きゅう",
+    "kanji": "九"
+  },
+  {
+    "hiragana": "きょう",
+    "kanji": "今日"
+  },
+  {
+    "hiragana": "ください",
+    "kanji": "下さい"
+  },
+  {
+    "hiragana": "くに",
+    "kanji": "国"
+  },
+  {
+    "hiragana": "くる",
+    "kanji": "来る"
+  },
+  {
+    "hiragana": "くるま",
+    "kanji": "車"
+  },
+  {
+    "hiragana": "ごご",
+    "kanji": "午後"
+  },
+  {
+    "hiragana": "ここのか",
+    "kanji": "九日"
+  },
+  {
+    "hiragana": "ここのつ",
+    "kanji": "九つ"
+  },
+  {
+    "hiragana": "ごぜん",
+    "kanji": "午前"
+  },
+  {
+    "hiragana": "ことし",
+    "kanji": "今年"
+  },
+  {
+    "hiragana": "こんげつ",
+    "kanji": "今月"
+  },
+  {
+    "hiragana": "さき",
+    "kanji": "先"
+  },
+  {
+    "hiragana": "さらいねん",
+    "kanji": "さ来年"
+  },
+  {
+    "hiragana": "さん",
+    "kanji": "三"
+  },
+  {
+    "hiragana": "じかん",
+    "kanji": "時間"
+  },
+  {
+    "hiragana": "した",
+    "kanji": "下"
+  },
+  {
+    "hiragana": "しち",
+    "kanji": "七"
+  },
+  {
+    "hiragana": "じゅう",
+    "kanji": "十"
+  },
+  {
+    "hiragana": "しろ",
+    "kanji": "白"
+  },
+  {
+    "hiragana": "しろい",
+    "kanji": "白い"
+  },
+  {
+    "hiragana": "せん",
+    "kanji": "千"
+  },
+  {
+    "hiragana": "せんげつ",
+    "kanji": "先月"
+  },
+  {
+    "hiragana": "せんせい",
+    "kanji": "先生"
+  },
+  {
+    "hiragana": "そと",
+    "kanji": "外"
+  },
+  {
+    "hiragana": "だいがく",
+    "kanji": "大学"
+  },
+  {
+    "hiragana": "たかい",
+    "kanji": "高い"
+  },
+  {
+    "hiragana": "だす",
+    "kanji": "出す"
+  },
+  {
+    "hiragana": "たべる",
+    "kanji": "食べる"
+  },
+  {
+    "hiragana": "ちいさい",
+    "kanji": "小さい"
+  },
+  {
+    "hiragana": "ちいさな",
+    "kanji": "小さな"
+  },
+  {
+    "hiragana": "ちち",
+    "kanji": "父"
+  },
+  {
+    "hiragana": "ついたち",
+    "kanji": "一日"
+  },
+  {
+    "hiragana": "でかける",
+    "kanji": "出かける"
+  },
+  {
+    "hiragana": "でる",
+    "kanji": "出る"
+  },
+  {
+    "hiragana": "てんき",
+    "kanji": "天気"
+  },
+  {
+    "hiragana": "でんき",
+    "kanji": "電気"
+  },
+  {
+    "hiragana": "でんしゃ",
+    "kanji": "電車"
+  },
+  {
+    "hiragana": "でんわ",
+    "kanji": "電話"
+  },
+  {
+    "hiragana": "とおか",
+    "kanji": "十日"
+  },
+  {
+    "hiragana": "とし",
+    "kanji": "年"
+  },
+  {
+    "hiragana": "なか",
+    "kanji": "中"
+  },
+  {
+    "hiragana": "ながい",
+    "kanji": "長い"
+  },
+  {
+    "hiragana": "ななつ",
+    "kanji": "七つ"
+  },
+  {
+    "hiragana": "なのか",
+    "kanji": "七日"
+  },
+  {
+    "hiragana": "なまえ",
+    "kanji": "名前"
+  },
+  {
+    "hiragana": "にし",
+    "kanji": "西"
+  },
+  {
+    "hiragana": "はいる",
+    "kanji": "入る"
+  },
+  {
+    "hiragana": "はち",
+    "kanji": "八"
+  },
+  {
+    "hiragana": "はつか",
+    "kanji": "二十日"
+  },
+  {
+    "hiragana": "はなし",
+    "kanji": "話"
+  },
+  {
+    "hiragana": "はなす",
+    "kanji": "話す"
+  },
+  {
+    "hiragana": "はは",
+    "kanji": "母"
+  },
+  {
+    "hiragana": "はん",
+    "kanji": "半"
+  },
+  {
+    "hiragana": "はんぶん",
+    "kanji": "半分"
+  },
+  {
+    "hiragana": "ひがし",
+    "kanji": "東"
+  },
+  {
+    "hiragana": "ひだり",
+    "kanji": "左"
+  },
+  {
+    "hiragana": "ひと",
+    "kanji": "人"
+  },
+  {
+    "hiragana": "ひとつ",
+    "kanji": "一つ"
+  },
+  {
+    "hiragana": "ひとつき",
+    "kanji": "一月"
+  },
+  {
+    "hiragana": "ひとり",
+    "kanji": "一人"
+  },
+  {
+    "hiragana": "ひゃく",
+    "kanji": "百"
+  },
+  {
+    "hiragana": "ふたつ",
+    "kanji": "二つ"
+  },
+  {
+    "hiragana": "ふたり",
+    "kanji": "二人"
+  },
+  {
+    "hiragana": "ふつか",
+    "kanji": "二日"
+  },
+  {
+    "hiragana": "ほか",
+    "kanji": "外"
+  },
+  {
+    "hiragana": "ほん",
+    "kanji": "本"
+  },
+  {
+    "hiragana": "まいにち",
+    "kanji": "毎日"
+  },
+  {
+    "hiragana": "まえ",
+    "kanji": "前"
+  },
+  {
+    "hiragana": "まん",
+    "kanji": "万"
+  },
+  {
+    "hiragana": "みぎ",
+    "kanji": "右"
+  },
+  {
+    "hiragana": "みず",
+    "kanji": "水"
+  },
+  {
+    "hiragana": "みせる",
+    "kanji": "見せる"
+  },
+  {
+    "hiragana": "みっか",
+    "kanji": "三日"
+  },
+  {
+    "hiragana": "みっつ",
+    "kanji": "三つ"
+  },
+  {
+    "hiragana": "みなみ",
+    "kanji": "南"
+  },
+  {
+    "hiragana": "みる",
+    "kanji": "見る"
+  },
+  {
+    "hiragana": "むいか",
+    "kanji": "六日"
+  },
+  {
+    "hiragana": "むっつ",
+    "kanji": "六つ"
+  },
+  {
+    "hiragana": "やすみ",
+    "kanji": "休み"
+  },
+  {
+    "hiragana": "やすむ",
+    "kanji": "休む"
+  },
+  {
+    "hiragana": "やっつ",
+    "kanji": "八つ"
+  },
+  {
+    "hiragana": "やま",
+    "kanji": "山"
+  },
+  {
+    "hiragana": "ようか",
+    "kanji": "八日"
+  },
+  {
+    "hiragana": "よっか",
+    "kanji": "四日"
+  },
+  {
+    "hiragana": "よっつ",
+    "kanji": "四つ"
+  },
+  {
+    "hiragana": "よむ",
+    "kanji": "読む"
+  },
+  {
+    "hiragana": "らいげつ",
+    "kanji": "来月"
+  },
+  {
+    "hiragana": "らいねん",
+    "kanji": "来年"
+  },
+  {
+    "hiragana": "ろく",
+    "kanji": "六"
+  },
+  {
+    "hiragana": "わかる",
+    "kanji": "分かる"
+  }
 ]
-
