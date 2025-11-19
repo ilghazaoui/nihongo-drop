@@ -5,24 +5,31 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Hiragana Drop</h1>
     <div id="game-container"></div>
-    <button id="start-btn">Start Game</button>
-    <button id="restart-btn" style="display: none;">Restart Game</button>
+    <div id="game-overlay">
+      <div class="overlay-content">
+        <button id="start-btn" class="game-button">Start Game</button>
+        <button id="restart-btn" class="game-button" style="display: none;">Restart Game</button>
+      </div>
+    </div>
   </div>
 `
 
 const startBtn = document.getElementById('start-btn') as HTMLButtonElement;
 const restartBtn = document.getElementById('restart-btn') as HTMLButtonElement;
+const overlay = document.getElementById('game-overlay') as HTMLDivElement;
 const game = new Game();
 
 startBtn.addEventListener('click', () => {
   console.log('Game Started');
-  startBtn.style.display = 'none';
+  overlay.style.display = 'none';
   game.start();
 });
 
 restartBtn.addEventListener('click', () => {
   console.log('Game Restarted');
-  restartBtn.style.display = 'none';
+  overlay.style.display = 'none';
+  startBtn.style.display = 'none';
+  restartBtn.style.display = 'block';
   game.reset();
   game.start();
 });
@@ -33,5 +40,7 @@ restartBtn.addEventListener('click', () => {
 // Simpler: Pass the restart button ID to the Game constructor or a setGameOverCallback.
 
 game.onGameOver = () => {
-  restartBtn.style.display = 'inline-block';
+  startBtn.style.display = 'none';
+  restartBtn.style.display = 'block';
+  overlay.style.display = 'flex';
 };
