@@ -4,11 +4,20 @@ import { Block } from './Block';
 export class Renderer {
     container: HTMLElement;
     cellElements: HTMLElement[][];
+    scoreElement: HTMLDivElement | null = null;
 
     constructor(containerId: string, width: number, height: number) {
         this.container = document.getElementById(containerId)!;
         this.cellElements = [];
         this.initGrid(width, height);
+
+        this.scoreElement = document.createElement('div');
+        this.scoreElement.id = 'score-display';
+        this.scoreElement.textContent = 'Score: 0';
+        const container = document.getElementById(containerId);
+        if (container && container.parentElement) {
+            container.parentElement.insertBefore(this.scoreElement, container);
+        }
     }
 
     initGrid(width: number, height: number) {
@@ -29,7 +38,13 @@ export class Renderer {
         }
     }
 
-    render(grid: Grid, activeBlock: Block | null) {
+    updateScore(score: number) {
+        if (this.scoreElement) {
+            this.scoreElement.textContent = `Score: ${score}`;
+        }
+    }
+
+    render(grid: Grid, activeBlock: Block | null, score?: number) {
         // Render grid state
         for (let y = 0; y < grid.height; y++) {
             for (let x = 0; x < grid.width; x++) {
@@ -75,6 +90,10 @@ export class Renderer {
                     }
                 }
             }
+        }
+
+        if (typeof score === 'number') {
+            this.updateScore(score);
         }
     }
 

@@ -25,6 +25,7 @@ export class Game {
     lastColumn: number = 2; // Default start column
     mode: GameMode;
     level: JLPTLevel;
+    score: number = 0;
 
     constructor(mode: GameMode = 'hiragana', level: JLPTLevel = 'n5') {
         this.mode = mode;
@@ -113,6 +114,7 @@ export class Game {
         this.gameOver = false;
         this.isRunning = false;
         this.dropCounter = 0;
+        this.score = 0;
         this.renderer.initGrid(6, 10); // Re-init DOM
     }
 
@@ -183,7 +185,7 @@ export class Game {
             this.dropCounter = 0;
         }
 
-        this.renderer.render(this.grid, this.activeBlock);
+        this.renderer.render(this.grid, this.activeBlock, this.score);
         requestAnimationFrame((t) => this.loop(t));
     }
 
@@ -206,6 +208,17 @@ export class Game {
         this.lockBlock();
     }
 
+    private getLevelMultiplier(): number {
+        switch (this.level) {
+            case 'n5': return 1;
+            case 'n4': return 2;
+            case 'n3': return 3;
+            case 'n2': return 4;
+            case 'n1': return 5;
+            default: return 1;
+        }
+    }
+
     lockBlock() {
         if (!this.activeBlock) return;
 
@@ -217,6 +230,14 @@ export class Game {
         const matches = this.wordManager.checkMatches(this.grid);
         if (matches.length > 0) {
             console.log("Matches found:", matches);
+
+            // Score calculation: 100 per block * level multiplier
+            const levelMult = this.getLevelMultiplier();
+            let blocksCleared = 0;
+            matches.forEach(match => {
+                blocksCleared += match.cells.length;
+            });
+            this.score += blocksCleared * 100 * levelMult;
 
             // Trigger Fuse Animation (Independent)
             this.renderer.animateFuse(matches);
