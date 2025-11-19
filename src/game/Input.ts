@@ -31,19 +31,21 @@ export class Input {
             this.handleUp();
         });
 
-        // Touch events
-        this.container.addEventListener('touchstart', () => {
+        // Touch events: tap to move to the tapped column then drop once
+        this.container.addEventListener('touchstart', (e) => {
             this.touchActive = true;
-            this.handleDown();
-        });
+            this.handleTouchTap(e);
+        }, { passive: true });
+
+        // Still support touchmove for live positioning if the user drags
         this.container.addEventListener('touchmove', (e) => {
             e.preventDefault(); // Prevent scrolling
             if (e.touches.length > 0) {
                 this.handleMove(e.touches[0].clientX);
             }
         }, { passive: false });
+
         this.container.addEventListener('touchend', () => {
-            this.handleUp();
             // Small timeout to ensure synthetic mouse events (if any) are ignored
             setTimeout(() => {
                 this.touchActive = false;
@@ -86,6 +88,28 @@ export class Input {
                     break;
             }
         });
+    }
+
+    handleTouchTap(e: TouchEvent) {
+        if (e.touches.length === 0) return;
+        const touch = e.touches[0];
+        const rect = this.container.getBoundingClientRect();
+        const relativeX = touch.clientX - rect.left;
+        const colWidth = rect.width / this.gridWidth;
+        const col = Math.floor(relativeX / colWidth);
+        const clampedCol = Math.max(0, Math.min(this.gridWidth - 1, col));
+
+        // First move active block to this column, then drop once
+        if (this.onMove) {
+            this.onMove(clampedCol);
+        }
+        if (this.onDrop) {
+            this.onDrop();
+        }
+
+        // Prevent a synthetic mouse event from also triggering a drop
+        this.handleDown();
+        this.handleUp();
     }
 
     handleMove(clientX: number) {
