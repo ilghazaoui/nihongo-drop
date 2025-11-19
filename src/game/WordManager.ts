@@ -1,4 +1,4 @@
-import { n5_words } from '../data/n5_words';
+import { n5_words } from '../data/words';
 import { Grid } from './Grid';
 import { isPureKanji } from '../utils/kanji';
 
@@ -12,7 +12,7 @@ export class WordManager {
     constructor() {
         this.wordsHiragana = new Map();
         this.wordsKanji = new Map();
-        n5_words.forEach(entry => {
+        n5_words.forEach((entry) => {
             this.wordsHiragana.set(entry.hiragana, entry.kanji);
             // Only include pure-kanji entries with length >= 2 characters for kanji-mode matching
             const chars = Array.from(entry.kanji);

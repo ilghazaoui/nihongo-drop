@@ -4,7 +4,7 @@ import { Renderer } from './Renderer';
 import { Input } from './Input';
 import { WordManager } from './WordManager';
 import type { WordMatchMode } from './WordManager';
-import { n5_words } from '../data/n5_words';
+import { n5_words } from '../data/words';
 import { tokenize } from '../utils/HiraganaTokenizer';
 import { isPureKanji } from '../utils/kanji';
 
@@ -119,7 +119,7 @@ export class Game {
     private pickRandomWord() {
         if (this.mode === 'kanji') {
             // Only use entries whose kanji is made of 2+ kanji characters (no kana)
-            const candidates = n5_words.filter(entry => {
+            const candidates = n5_words.filter((entry) => {
                 const chars = Array.from(entry.kanji);
                 return chars.length >= 2 && isPureKanji(entry.kanji);
             });
