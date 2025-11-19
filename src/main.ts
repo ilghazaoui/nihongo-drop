@@ -3,7 +3,7 @@ import { Game } from './game/Game';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>Hiragana Drop</h1>
+    <h1 class="game-title">Nihongo Drop</h1>
     <div id="game-container"></div>
     <div id="game-overlay">
       <div class="overlay-content">
