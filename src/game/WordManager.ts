@@ -70,19 +70,18 @@ export class WordManager {
                     const char = grid.getCell(k, y);
                     if (!char) break;
                     currentWord += char;
+
+                    // Check normal
                     if (dict.has(currentWord)) {
                         const data = dict.get(currentWord)!;
-                        const cells = [];
-                        let isNew = false;
-                        for (let m = x; m <= k; m++) {
-                            const key = `${m},${y}`;
-                            if (!visited.has(key)) isNew = true;
-                            cells.push({ x: m, y });
-                        }
-                        if (isNew) {
-                            cells.forEach(c => visited.add(`${c.x},${c.y}`));
-                            matches.push({ cells, kanji: data.kanji, level: data.level });
-                        }
+                        this.addMatch(matches, visited, x, k, y, y, data);
+                    }
+
+                    // Check reverse
+                    const reversedWord = Array.from(currentWord).reverse().join('');
+                    if (dict.has(reversedWord)) {
+                        const data = dict.get(reversedWord)!;
+                        this.addMatch(matches, visited, x, k, y, y, data);
                     }
                 }
             }
@@ -96,24 +95,54 @@ export class WordManager {
                     const char = grid.getCell(x, k);
                     if (!char) break;
                     currentWord += char;
+
+                    // Check normal
                     if (dict.has(currentWord)) {
                         const data = dict.get(currentWord)!;
-                        const cells = [];
-                        let isNew = false;
-                        for (let m = y; m <= k; m++) {
-                            const key = `${x},${m}`;
-                            if (!visited.has(key)) isNew = true;
-                            cells.push({ x, y: m });
-                        }
-                        if (isNew) {
-                            cells.forEach(c => visited.add(`${c.x},${c.y}`));
-                            matches.push({ cells, kanji: data.kanji, level: data.level });
-                        }
+                        this.addMatch(matches, visited, x, x, y, k, data);
+                    }
+
+                    // Check reverse
+                    const reversedWord = Array.from(currentWord).reverse().join('');
+                    if (dict.has(reversedWord)) {
+                        const data = dict.get(reversedWord)!;
+                        this.addMatch(matches, visited, x, x, y, k, data);
                     }
                 }
             }
         }
 
         return matches;
+    }
+
+    private addMatch(
+        matches: { cells: { x: number, y: number }[], kanji: string, level: JLPTLevel }[],
+        visited: Set<string>,
+        startX: number, endX: number,
+        startY: number, endY: number,
+        data: WordData
+    ) {
+        const cells: { x: number, y: number }[] = [];
+        let isNew = false;
+
+        // Collect cells based on direction (Horizontal or Vertical)
+        if (startY === endY) { // Horizontal
+            for (let m = startX; m <= endX; m++) {
+                const key = `${m},${startY}`;
+                if (!visited.has(key)) isNew = true;
+                cells.push({ x: m, y: startY });
+            }
+        } else { // Vertical
+            for (let m = startY; m <= endY; m++) {
+                const key = `${startX},${m}`;
+                if (!visited.has(key)) isNew = true;
+                cells.push({ x: startX, y: m });
+            }
+        }
+
+        if (isNew) {
+            cells.forEach(c => visited.add(`${c.x},${c.y}`));
+            matches.push({ cells, kanji: data.kanji, level: data.level });
+        }
     }
 }
