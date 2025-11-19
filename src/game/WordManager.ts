@@ -1,4 +1,4 @@
-import { n5_words } from '../data/words';
+import { wordsByLevel, type JLPTLevel } from '../data/words';
 import { Grid } from './Grid';
 import { isPureKanji } from '../utils/kanji';
 
@@ -8,13 +8,31 @@ export class WordManager {
     wordsHiragana: Map<string, string>; // hiragana -> kanji
     wordsKanji: Map<string, string>;    // kanji -> kanji (only multi-char kanji strings)
     mode: WordMatchMode = 'hiragana';
+    level: JLPTLevel;
 
-    constructor() {
+    constructor(level: JLPTLevel = 'n5') {
+        this.level = level;
         this.wordsHiragana = new Map();
         this.wordsKanji = new Map();
-        n5_words.forEach((entry) => {
+        const source = wordsByLevel[this.level];
+        source.forEach((entry) => {
             this.wordsHiragana.set(entry.hiragana, entry.kanji);
             // Only include pure-kanji entries with length >= 2 characters for kanji-mode matching
+            const chars = Array.from(entry.kanji);
+            if (chars.length >= 2 && isPureKanji(entry.kanji)) {
+                this.wordsKanji.set(entry.kanji, entry.kanji);
+            }
+        });
+    }
+
+    setLevel(level: JLPTLevel) {
+        this.level = level;
+        // Rebuild maps from the new level source
+        this.wordsHiragana.clear();
+        this.wordsKanji.clear();
+        const source = wordsByLevel[this.level];
+        source.forEach((entry) => {
+            this.wordsHiragana.set(entry.hiragana, entry.kanji);
             const chars = Array.from(entry.kanji);
             if (chars.length >= 2 && isPureKanji(entry.kanji)) {
                 this.wordsKanji.set(entry.kanji, entry.kanji);

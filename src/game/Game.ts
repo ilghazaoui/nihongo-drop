@@ -4,7 +4,7 @@ import { Renderer } from './Renderer';
 import { Input } from './Input';
 import { WordManager } from './WordManager';
 import type { WordMatchMode } from './WordManager';
-import { n5_words } from '../data/words';
+import { wordsByLevel, type JLPTLevel } from '../data/words';
 import { tokenize } from '../utils/HiraganaTokenizer';
 import { isPureKanji } from '../utils/kanji';
 
@@ -24,13 +24,15 @@ export class Game {
     onGameOver: (() => void) | null = null;
     lastColumn: number = 2; // Default start column
     mode: GameMode;
+    level: JLPTLevel;
 
-    constructor(mode: GameMode = 'hiragana') {
+    constructor(mode: GameMode = 'hiragana', level: JLPTLevel = 'n5') {
         this.mode = mode;
+        this.level = level;
         this.grid = new Grid(6, 10);
         this.renderer = new Renderer('game-container', 6, 10);
         this.input = new Input('game-container', 6);
-        this.wordManager = new WordManager();
+        this.wordManager = new WordManager(this.level);
         this.wordManager.setMode(this.mode as WordMatchMode);
 
         this.input.onMove = (col) => {
@@ -99,6 +101,12 @@ export class Game {
         this.reset();
     }
 
+    setLevel(level: JLPTLevel) {
+        this.level = level;
+        this.wordManager.setLevel(this.level);
+        this.reset();
+    }
+
     reset() {
         this.grid = new Grid(6, 10);
         this.activeBlock = null;
@@ -117,16 +125,17 @@ export class Game {
     }
 
     private pickRandomWord() {
+        const source = wordsByLevel[this.level];
         if (this.mode === 'kanji') {
             // Only use entries whose kanji is made of 2+ kanji characters (no kana)
-            const candidates = n5_words.filter((entry) => {
+            const candidates = source.filter((entry) => {
                 const chars = Array.from(entry.kanji);
                 return chars.length >= 2 && isPureKanji(entry.kanji);
             });
-            const pool = candidates.length > 0 ? candidates : n5_words;
+            const pool = candidates.length > 0 ? candidates : source;
             return pool[Math.floor(Math.random() * pool.length)];
         }
-        return n5_words[Math.floor(Math.random() * n5_words.length)];
+        return source[Math.floor(Math.random() * source.length)];
     }
 
     private getHiraganaToken(wordHiragana: string): string {
