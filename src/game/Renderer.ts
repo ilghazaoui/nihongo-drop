@@ -13,7 +13,7 @@ export class Renderer {
 
         this.scoreElement = document.createElement('div');
         this.scoreElement.id = 'score-display';
-        this.scoreElement.textContent = 'Score: 0';
+        this.scoreElement.textContent = 'Score : 0';
         const container = document.getElementById(containerId);
         if (container && container.parentElement) {
             container.parentElement.insertBefore(this.scoreElement, container);
@@ -40,7 +40,7 @@ export class Renderer {
 
     updateScore(score: number) {
         if (this.scoreElement) {
-            this.scoreElement.textContent = `Score: ${score}`;
+            this.scoreElement.textContent = `Score : ${score}`;
         }
     }
 
