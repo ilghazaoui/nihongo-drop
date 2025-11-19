@@ -1,5 +1,6 @@
 import { Grid } from './Grid';
 import { Block } from './Block';
+import { getCharacterColor } from '../utils/ColorUtils';
 
 export class Renderer {
     container: HTMLElement;
@@ -63,6 +64,10 @@ export class Renderer {
 
                     if (char) {
                         cell.classList.add('occupied');
+                        const colors = getCharacterColor(char);
+                        cell.style.background = colors.background;
+                        cell.style.borderColor = colors.borderColor;
+
                         if (char.length > 1) {
                             cell.style.fontSize = '1.2rem';
                         } else {
@@ -70,6 +75,8 @@ export class Renderer {
                         }
                     } else {
                         cell.style.fontSize = '';
+                        cell.style.background = '';
+                        cell.style.borderColor = '';
                     }
                 }
             }
@@ -83,6 +90,11 @@ export class Renderer {
                 if (!cell.classList.contains('disintegrate') && !cell.classList.contains('fusing')) {
                     cell.textContent = activeBlock.char;
                     cell.classList.add('active');
+
+                    const colors = getCharacterColor(activeBlock.char);
+                    cell.style.background = colors.background;
+                    cell.style.borderColor = colors.borderColor;
+
                     if (activeBlock.char.length > 1) {
                         cell.style.fontSize = '1.2rem';
                     } else {
