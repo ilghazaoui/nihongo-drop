@@ -29,8 +29,4 @@ export class Grid {
         }
         return null;
     }
-
-    isRowFull(y: number): boolean {
-        return this.cells[y].every(cell => cell !== null);
-    }
 }

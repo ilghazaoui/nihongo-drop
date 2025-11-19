@@ -8,9 +8,4 @@ export class Block {
         this.y = y;
         this.char = char;
     }
-
-    move(dx: number, dy: number) {
-        this.x += dx;
-        this.y += dy;
-    }
 }

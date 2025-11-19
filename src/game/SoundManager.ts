@@ -1,5 +1,5 @@
 export class SoundManager {
-    private audioContext: AudioContext | null = null;
+    private readonly audioContext: AudioContext | null = null;
     private isMuted: boolean = false;
 
     constructor() {
@@ -14,12 +14,8 @@ export class SoundManager {
 
     resume() {
         if (this.audioContext && this.audioContext.state === 'suspended') {
-            this.audioContext.resume();
+            this.audioContext.resume().then();
         }
-    }
-
-    toggleMute() {
-        this.isMuted = !this.isMuted;
     }
 
     private playTone(freq: number, type: OscillatorType, duration: number, startTime: number = 0, vol: number = 0.1) {
