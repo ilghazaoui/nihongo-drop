@@ -4,6 +4,8 @@ import { isPureKanji } from '../utils/kanji';
 
 export type WordMatchMode = 'hiragana' | 'kanji';
 
+const LEVEL_ORDER: JLPTLevel[] = ['n5', 'n4', 'n3', 'n2', 'n1'];
+
 export class WordManager {
     wordsHiragana: Map<string, string>; // hiragana -> kanji
     wordsKanji: Map<string, string>;    // kanji -> kanji (only multi-char kanji strings)
@@ -14,30 +16,32 @@ export class WordManager {
         this.level = level;
         this.wordsHiragana = new Map();
         this.wordsKanji = new Map();
-        const source = wordsByLevel[this.level];
-        source.forEach((entry) => {
-            this.wordsHiragana.set(entry.hiragana, entry.kanji);
-            // Only include pure-kanji entries with length >= 2 characters for kanji-mode matching
-            const chars = Array.from(entry.kanji);
-            if (chars.length >= 2 && isPureKanji(entry.kanji)) {
-                this.wordsKanji.set(entry.kanji, entry.kanji);
-            }
-        });
+        this.loadWordsForLevel(this.level);
     }
 
     setLevel(level: JLPTLevel) {
         this.level = level;
-        // Rebuild maps from the new level source
         this.wordsHiragana.clear();
         this.wordsKanji.clear();
-        const source = wordsByLevel[this.level];
-        source.forEach((entry) => {
-            this.wordsHiragana.set(entry.hiragana, entry.kanji);
-            const chars = Array.from(entry.kanji);
-            if (chars.length >= 2 && isPureKanji(entry.kanji)) {
-                this.wordsKanji.set(entry.kanji, entry.kanji);
-            }
-        });
+        this.loadWordsForLevel(this.level);
+    }
+
+    private loadWordsForLevel(targetLevel: JLPTLevel) {
+        const targetIndex = LEVEL_ORDER.indexOf(targetLevel);
+
+        for (let i = 0; i <= targetIndex; i++) {
+            const currentLevel = LEVEL_ORDER[i];
+            const source = wordsByLevel[currentLevel];
+
+            source.forEach((entry) => {
+                this.wordsHiragana.set(entry.hiragana, entry.kanji);
+
+                const chars = Array.from(entry.kanji);
+                if (chars.length >= 2 && isPureKanji(entry.kanji)) {
+                    this.wordsKanji.set(entry.kanji, entry.kanji);
+                }
+            });
+        }
     }
 
     setMode(mode: WordMatchMode) {
